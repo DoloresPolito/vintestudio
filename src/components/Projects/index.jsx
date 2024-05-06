@@ -132,7 +132,7 @@ export default function Home() {
       className={styles.projects}
       id="work"
     >
-      <h2>Work</h2>
+      <h2>Projects</h2>
       <div className={styles.body}>
         {projects.map((project, index) => {
           return (

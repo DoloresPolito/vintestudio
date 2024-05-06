@@ -43,7 +43,7 @@ const WorkProgress2 = () => {
 
           <div>
             <Icons>
-              <Image src={computer} alt="computer" />
+              <Image src={text} alt="computer" />
             </Icons>
 
             <Numbers>
@@ -65,7 +65,7 @@ const WorkProgress2 = () => {
 
           <div>
             <Icons>
-              <Image src={text} alt="text" />
+              <Image src={book} alt="text" />
             </Icons>
 
             <Numbers>
@@ -86,7 +86,7 @@ const WorkProgress2 = () => {
 
           <div>
             <Icons>
-              <Image src={book} alt="book" />
+              <Image src={computer} alt="book" />
             </Icons>
 
             <Numbers>
@@ -128,7 +128,7 @@ const WorkProgressSection = styled.div`
         line-height: 22px;
         letter-spacing: 2px;
         font-weight: 400;
-        color: #6370c2;
+        color: #4a4747;
         text-align: center;
         margin-bottom: 100px;
   }

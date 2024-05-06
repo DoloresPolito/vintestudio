@@ -6,17 +6,17 @@ import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const images = [
-  "work/1.png",
-  "work/2.png",
-  "work/3.png",
+  "work/n1u1.png",
+  "work/n1u2.png",
+  "work/n1u3.png",
   "work/4.png",
-  "work/5.png",
-  "work/6.png",
+  "work/n1u3.png",
+  "work/n1u3.png",
   "work/7.png",
   "work/2.png",
-  "work/9.png",
-  "work/4.png",
-  "work/5.png",
+  "work/sukha3.png",
+  "work/sukha1.png",
+  "work/sukha2.png",
   "work/1.png",
 ]
 
