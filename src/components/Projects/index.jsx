@@ -25,7 +25,7 @@ const projects = [
     title: "Sukha Tents",
     src: "sukha.png",
     color: "#706D63",
-    link: "https://www.sukhatents.com/",
+    link: "https://sukhanew.vercel.app/",
   },
   {
     title: "Ines Miguens Photo",
