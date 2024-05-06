@@ -1,54 +1,78 @@
-'use client';
-import styles from './style.module.scss'
-import { useState, useEffect, useRef } from 'react';
-import Project from './components/project';
-import { motion } from 'framer-motion';
-import gsap from 'gsap';
-import Image from 'next/image';
-import Rounded from '../../common/RoundedButton';
+"use client";
+import styles from "./style.module.scss";
+import { useState, useEffect, useRef } from "react";
+import Project from "./components/project";
+import { motion } from "framer-motion";
+import gsap from "gsap";
+import Image from "next/image";
+import Rounded from "../../common/RoundedButton";
 
 const projects = [
   {
     title: "n1u",
     src: "n1u.png",
     color: "#706D63",
-    link:"https://n1u.app/"
+    link: "https://n1u.app/",
   },
   {
     title: "Koibanx",
     src: "koi.png",
     color: "#8C8C8C",
-    link:"https://koibanx.com/"
+    link: "https://koibanx.com/",
   },
 
   {
     title: "Sukha Tents",
     src: "sukha.png",
     color: "#706D63",
-    link:"https://sukhanew.vercel.app/"
+    link: "https://sukhanew.vercel.app/",
   },
   {
     title: "Ines Miguens Photo",
     src: "ines.png",
     color: "black",
-    link:"https://inesmiguens.vercel.app/"
+    link: "https://inesmiguens.vercel.app/",
   },
- 
-]
+];
 
 const scaleAnimation = {
-    initial: {scale: 0, x:"-50%", y:"-50%"},
-    enter: {scale: 1, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.76, 0, 0.24, 1]}},
-    closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
-}
+  initial: { scale: 0, x: "-50%", y: "-50%" },
+  enter: {
+    scale: 1,
+    x: "-50%",
+    y: "-50%",
+    transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
+  },
+  closed: {
+    scale: 0,
+    x: "-50%",
+    y: "-50%",
+    transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] },
+  },
+};
 
 export default function Home() {
-
-  const [modal, setModal] = useState({active: false, index: 0})
+  const [modal, setModal] = useState({ active: false, index: 0 });
   const { active, index } = modal;
   const modalContainer = useRef(null);
   const cursor = useRef(null);
   const cursorLabel = useRef(null);
+
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   let xMoveContainer = useRef(null);
   let yMoveContainer = useRef(null);
@@ -57,65 +81,128 @@ export default function Home() {
   let xMoveCursorLabel = useRef(null);
   let yMoveCursorLabel = useRef(null);
 
-  useEffect( () => {
+  useEffect(() => {
     //Move Container
-    xMoveContainer.current = gsap.quickTo(modalContainer.current, "left", {duration: 0.8, ease: "power3"})
-    yMoveContainer.current = gsap.quickTo(modalContainer.current, "top", {duration: 0.8, ease: "power3"})
+    xMoveContainer.current = gsap.quickTo(modalContainer.current, "left", {
+      duration: 0.8,
+      ease: "power3",
+    });
+    yMoveContainer.current = gsap.quickTo(modalContainer.current, "top", {
+      duration: 0.8,
+      ease: "power3",
+    });
     //Move cursor
-    xMoveCursor.current = gsap.quickTo(cursor.current, "left", {duration: 0.5, ease: "power3"})
-    yMoveCursor.current = gsap.quickTo(cursor.current, "top", {duration: 0.5, ease: "power3"})
+    xMoveCursor.current = gsap.quickTo(cursor.current, "left", {
+      duration: 0.5,
+      ease: "power3",
+    });
+    yMoveCursor.current = gsap.quickTo(cursor.current, "top", {
+      duration: 0.5,
+      ease: "power3",
+    });
     //Move cursor label
-    xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {duration: 0.45, ease: "power3"})
-    yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {duration: 0.45, ease: "power3"})
-  }, [])
+    xMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "left", {
+      duration: 0.45,
+      ease: "power3",
+    });
+    yMoveCursorLabel.current = gsap.quickTo(cursorLabel.current, "top", {
+      duration: 0.45,
+      ease: "power3",
+    });
+  }, []);
 
   const moveItems = (x, y) => {
-    xMoveContainer.current(x)
-    yMoveContainer.current(y)
-    xMoveCursor.current(x)
-    yMoveCursor.current(y)
-    xMoveCursorLabel.current(x)
-    yMoveCursorLabel.current(y)
-  }
+    xMoveContainer.current(x);
+    yMoveContainer.current(y);
+    xMoveCursor.current(x);
+    yMoveCursor.current(y);
+    xMoveCursorLabel.current(x);
+    yMoveCursorLabel.current(y);
+  };
   const manageModal = (active, index, x, y) => {
-    moveItems(x, y)
-    setModal({active, index})
-  }
+    moveItems(x, y);
+    setModal({ active, index });
+  };
 
   return (
-  <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects} id="work">
-    <h2>WORK</h2>
-    <div className={styles.body}>
-      {
-        projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index} link={project.link}/>
-        })
-      }
-    </div>
-    <Rounded>
-      <p>More work</p>
-    </Rounded>
-    <>
-        <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
-            <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
-            {
-                projects.map( (project, index) => {
-                const { src, color } = project
-                return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
-                    <Image 
+    <main
+      onMouseMove={(e) => {
+        moveItems(e.clientX, e.clientY);
+      }}
+      className={styles.projects}
+      id="work"
+    >
+      <h2>Work</h2>
+      <div className={styles.body}>
+        {projects.map((project, index) => {
+          return (
+            <Project
+              index={index}
+              title={project.title}
+              manageModal={manageModal}
+              key={index}
+              link={project.link}
+            />
+          );
+        })}
+      </div>
+      <Rounded>
+        <p>More work</p>
+      </Rounded>
+
+{width > 800 ? (<>
+  <>
+        <motion.div
+          ref={modalContainer}
+          variants={scaleAnimation}
+          initial="initial"
+          animate={active ? "enter" : "closed"}
+          className={styles.modalContainer}
+        >
+          <div
+            style={{ top: index * -100 + "%" }}
+            className={styles.modalSlider}
+          >
+            {projects.map((project, index) => {
+              const { src, color } = project;
+              return (
+                <div
+                  className={styles.modal}
+                  style={{ backgroundColor: color }}
+                  key={`modal_${index}`}
+                >
+                  <Image
                     src={`/images/${src}`}
                     width={300}
                     height={0}
                     alt="image"
-                    />
+                  />
                 </div>
-                })
-            }
-            </div>
+              );
+            })}
+          </div>
         </motion.div>
-        <motion.div ref={cursor} className={styles.cursor} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}></motion.div>
-        <motion.div ref={cursorLabel} className={styles.cursorLabel} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"}>View</motion.div>
-    </>
-  </main>
-  )
+        <motion.div
+          ref={cursor}
+          className={styles.cursor}
+          variants={scaleAnimation}
+          initial="initial"
+          animate={active ? "enter" : "closed"}
+        ></motion.div>
+        <motion.div
+          ref={cursorLabel}
+          className={styles.cursorLabel}
+          variants={scaleAnimation}
+          initial="initial"
+          animate={active ? "enter" : "closed"}
+        >
+          View
+        </motion.div>
+      </>
+
+</>) : (<>
+</>)}
+     
+    </main>
+  );
 }

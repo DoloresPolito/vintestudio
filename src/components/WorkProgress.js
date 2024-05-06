@@ -18,7 +18,7 @@ const WorkProgress2 = () => {
       <WorkProgressSection
 
       >
-        <h2>WORK PROGRESS</h2>
+        <h2>Work Progress</h2>
         <Content >
           <div>
             <Icons>
@@ -124,13 +124,13 @@ const WorkProgressSection = styled.div`
 
   h2{
     font-family: "Montserrat", sans-serif;
-    font-size: 28px;
-    line-height: 22px;
-    letter-spacing: 2px;
-    font-weight: 400;
-    color: #4a4747;
-    text-align: center;
-    margin-bottom: 100px;
+        font-size: 50px;
+        line-height: 22px;
+        letter-spacing: 2px;
+        font-weight: 400;
+        color: #6370c2;
+        text-align: center;
+        margin-bottom: 100px;
   }
 
 
