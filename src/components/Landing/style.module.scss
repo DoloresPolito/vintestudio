@@ -27,6 +27,10 @@
       font-weight: 300;
       padding-right: 50px;
       font-family: "Montserrat", sans-serif;
+
+      @media screen and (max-width: 500px) {
+        font-size: 90px;
+      }
     }
     
     .slider p:nth-of-type(2){

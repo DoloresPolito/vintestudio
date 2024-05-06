@@ -7,9 +7,13 @@
     margin-top: 50px;
     overflow-x: hidden;
 
+
     @media screen and (max-width: 1000px) {
        padding-left: 0px;
     padding-right: 0px;
+}
+@media screen and (max-width: 800px) {
+    height: 1300px;
 }
 
     .body{
