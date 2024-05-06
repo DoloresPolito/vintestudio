@@ -7,6 +7,10 @@
     align-items: center;
     justify-content: center;
     padding: 15px 60px 15px 60px;
+
+    @media screen and (max-width: 1000px) {
+        padding: 5px 30px 5px 30px;
+    }
   
     p{
         position: relative;

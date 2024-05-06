@@ -45,13 +45,16 @@ export default function Index() {
             Feel free to send us an e-mail with any question. Wed love to be
             part of your project.
           </p>
-          <motion.div style={{ x }} className={styles.buttonContainer}>
+          {width > 1000 ? (<>
+            <motion.div style={{ x }} className={styles.buttonContainer}>
             <StyledLink href="mailto:dolores.polito@gmail.com" target="_blank">
               <Rounded backgroundColor={"#7a8aed"} className={styles.button}>
                 <p>Get in touch</p>
               </Rounded>
             </StyledLink>
           </motion.div>
+          </>) : (<></>)}
+         
         </div>
 
         {width > 1000 ? (
@@ -76,7 +79,19 @@ export default function Index() {
             </div>
           </>
         ) : (
-          <></>
+          <>
+            <div className={styles.nav}>
+              <StyledLink
+                href="mailto:dolores.polito@gmail.com"
+                target="_blank"
+              >
+                <Rounded>
+                  <p>dolores.polito@gmail.com</p>
+                </Rounded>
+              </StyledLink>
+             
+            </div>
+          </>
         )}
 
         <div className={styles.info}>
