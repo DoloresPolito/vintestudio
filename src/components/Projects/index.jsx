@@ -9,29 +9,29 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "N1u",
-    src: "c2montreal.png",
-    color: "#000000"
+    title: "n1u",
+    src: "n1u.png",
+    color: "#706D63",
+    link:"https://n1u.app/"
   },
   {
-    title: "Mimic Fi",
-    src: "officestudio.png",
-    color: "#8C8C8C"
+    title: "Koibanx",
+    src: "koi.png",
+    color: "#8C8C8C",
+    link:"https://koibanx.com/"
   },
-  {
-    title: "ETH LATAM",
-    src: "locomotive.png",
-    color: "#EFE8D3"
-  },
+
   {
     title: "Sukha Tents",
     src: "silencio.png",
-    color: "#706D63"
+    color: "#706D63",
+    link:"https://n1u.app/"
   },
   {
-    title: "A.pb Arch",
-    src: "silencio.png",
-    color: "#706D63"
+    title: "Ines Miguens Photo",
+    src: "ines.png",
+    color: "black",
+    link:"https://inesmiguens.vercel.app/"
   },
  
 ]
@@ -83,11 +83,11 @@ export default function Home() {
   }
 
   return (
-  <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
+  <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects} id="work">
     <div className={styles.body}>
       {
         projects.map( (project, index) => {
-          return <Project index={index} title={project.title} manageModal={manageModal} key={index}/>
+          return <Project index={index} title={project.title} manageModal={manageModal} key={index} link={project.link}/>
         })
       }
     </div>

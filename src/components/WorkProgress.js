@@ -16,7 +16,7 @@ const WorkProgress2 = () => {
   return (
     <>
       <WorkProgressSection
-    
+
       >
         <Content >
           <div>
@@ -262,6 +262,7 @@ const Texts = styled.div`
     color: #4a4747;
     text-align: center;
     width: 230px;
+
 
     @media only screen and (max-width: 1160px) {
       width: 350px;

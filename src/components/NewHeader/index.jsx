@@ -80,10 +80,10 @@ export default function Index() {
               <Magnetic>
                 <div className={styles.el}>
                   <Link
-                    to="about"
+                    to="services"
                     spy={true}
                     smooth={true}
-                    offset={10}
+                    offset={-40}
                     duration={800}
                   >
                     <p>services</p>
@@ -94,7 +94,7 @@ export default function Index() {
               <Magnetic>
                 <div className={styles.el}>
                   <Link
-                    to="technical"
+                    to="work"
                     spy={true}
                     smooth={true}
                     offset={10}
@@ -108,10 +108,10 @@ export default function Index() {
               <Magnetic>
                 <div className={styles.el}>
                   <Link
-                    to="complements"
+                    to="contact"
                     spy={true}
                     smooth={true}
-                    offset={10}
+                    offset={250}
                     duration={800}
                   >
                     <p>contact</p>
@@ -147,7 +147,7 @@ export default function Index() {
               <Image
                 src={logo}
                 alt="logo"
-                style={{ height: "30px", width: "329px" }}
+                style={{ height: "20px", width: "250px" }}
               />
             </div>
 

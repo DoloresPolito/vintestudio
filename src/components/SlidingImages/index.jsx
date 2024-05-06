@@ -54,7 +54,7 @@ export default function Index() {
     const height = useTransform(scrollYProgress, [0, 0.9], [50, 0])
 
     return (
-        <div ref={container} className={styles.slidingImages}>
+        <div ref={container} className={styles.slidingImages} id="work">
             <motion.div style={{x: x1}} className={styles.slider}>
                     {
                         slider1.map( (project, index) => {

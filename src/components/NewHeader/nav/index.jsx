@@ -7,25 +7,19 @@ import Link from "./Link";
 import Curve from "./Curve";
 
 const navItems = [
+
   {
-    title: "HOME",
-    href: "technical",
+    title: "services",
+    href: "services",
   },
   {
-    title: "QUIENES SOMOS",
-    href: "technical",
+    title: "work",
+    href: "work",
   },
+
   {
-    title: "INFO",
-    href: "technical",
-  },
-  {
-    title: "COMPLEMENTOS",
-    href: "complements",
-  },
-  {
-    title: "CONTACTO",
-    href: "contacto",
+    title: "contact",
+    href: "contact",
   },
 ];
 

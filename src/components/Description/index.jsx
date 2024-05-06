@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { slideUp, opacity } from "./animation";
 import Rounded from "../../common/RoundedButton";
 import WorkProgress2 from "../WorkProgress";
+import Projects from "../Projects"
 export default function Index() {
   const phrase =
     "Vinte is a professional website design and development studio based in Argentina. We create human experience in a digital world; using the best practices and latest web standards guidelines. The results are digital experiences lovingly hand coded by combining business strategy, identity, UX/UI, and content.";
@@ -12,7 +13,7 @@ export default function Index() {
   return (
 
     <>
-    <div ref={description} className={styles.description}>
+    <div ref={description} className={styles.description}     id="services">
       <div className={styles.body}>
         <p>
           {phrase.split(" ").map((word, index) => {
@@ -30,10 +31,7 @@ export default function Index() {
             );
           })}
         </p>
-        {/* <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>
-          The combination of my passion for design, code & interaction positions
-          me in a unique place in the web design world.
-        </motion.p> */}
+    
         <div data-scroll data-scroll-speed={0.1}>
           <Rounded className={styles.button}>
             <p>Know us better</p>
@@ -43,6 +41,7 @@ export default function Index() {
   
     </div>
     <WorkProgress2/>
+    <Projects/>
     </>
   );
 }

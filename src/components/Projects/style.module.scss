@@ -4,7 +4,12 @@
     padding-left: 200px;
     padding-right: 200px;
     flex-direction: column;
-    margin-top: 300px;
+    margin-top: 50px;
+
+    @media screen and (max-width: 1000px) {
+       padding-left: 0px;
+    padding-right: 0px;
+}
 
     .body{
         max-width: 1400px;
@@ -26,6 +31,7 @@
         pointer-events: none;
         overflow: hidden;
         z-index: 3;
+      
     }
     
     .modalSlider{
@@ -61,6 +67,7 @@
         font-size: 14px;
         font-weight: 300;
         pointer-events: none;
+        font-family: "Montserrat", sans-serif !important;
     }
     
     .cursorLabel{
