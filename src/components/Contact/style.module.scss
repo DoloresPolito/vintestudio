@@ -21,11 +21,14 @@
             margin-left: 200px;
             margin-right: 200px;
             position: relative;
+            font-family: "Montserrat", sans-serif !important;
+
             span{
                 display: flex;
                 align-items: center;
                 color:#6370c2;
-           
+                font-family: "Montserrat", sans-serif !important;
+                font-weight: 500;
                 .imageContainer{
                     width: 100px;
                     height: 100px;
@@ -68,6 +71,7 @@
                     font-weight: 300;
                     z-index: 2;
                     position: relative;
+                    font-family: "Montserrat", sans-serif !important;
                 }
             }
             svg{
@@ -96,6 +100,7 @@
                     margin: 0px;
                     padding: 2.5px;
                     cursor: pointer;
+                    font-family: "Montserrat", sans-serif !important;
                 }
                 p{
                     &::after{
@@ -109,6 +114,7 @@
                         left: 50%;
                         transform: translateX(-50%);
                         transition: width 0.2s linear;
+                      
                      
                     }
                     &:hover{
@@ -121,7 +127,7 @@
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
-                   
+                
           
                 }
                 h3{
@@ -129,6 +135,7 @@
                     cursor: default;
                     font-weight: 300;
                     font-size: 1em;
+                
                 }
             }
             

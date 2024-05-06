@@ -113,11 +113,14 @@ const WorkProgressSection = styled.div`
   height: 100vh;
   width: 100%;
   background-color: white;
-  color: #5f5f67;
+  color: #4a4747;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin-top: 100px;
+
 
   @media only screen and (max-width: 1160px) {
     height: auto;
@@ -195,12 +198,12 @@ const Titles = styled.div`
   }
 
   p {
-    font-family: "Bebas Neue", cursive;
+    font-family: "Montserrat", sans-serif;
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 2px;
-    font-weight: 600;
-    color: #5f5f67;
+    font-weight: 200;
+    color: #4a4747;
     text-align: center;
     width: 250px;
     @media only screen and (max-width: 1160px) {
@@ -231,7 +234,7 @@ const Numbers = styled.div`
     line-height: 20px;
     letter-spacing: 1px;
     font-weight: 600;
-    color: #5f5f67;
+    color: #4a4747;
     text-align: center;
     width: 250px;
 
@@ -255,8 +258,8 @@ const Texts = styled.div`
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 1px;
-    font-weight: 500;
-    color: #5f5f67;
+    font-weight: 200;
+    color: #4a4747;
     text-align: center;
     width: 230px;
 

@@ -86,7 +86,7 @@ export default function Index() {
                     offset={10}
                     duration={800}
                   >
-                    <p>QUIENES SOMOS</p>
+                    <p>services</p>
                   </Link>
                   <div className={styles.indicator}></div>
                 </div>
@@ -100,7 +100,7 @@ export default function Index() {
                     offset={10}
                     duration={800}
                   >
-                    <p>INFO</p>
+                    <p>work</p>
                   </Link>
                   <div className={styles.indicator}></div>
                 </div>
@@ -114,25 +114,12 @@ export default function Index() {
                     offset={10}
                     duration={800}
                   >
-                    <p>COMPLEMENTOS</p>
+                    <p>contact</p>
                   </Link>
                   <div className={styles.indicator}></div>
                 </div>
               </Magnetic>
-              <Magnetic>
-                <div className={styles.el}>
-                  <Link
-                    to="contacto"
-                    spy={true}
-                    smooth={true}
-                    offset={600}
-                    duration={800}
-                  >
-                    <p>CONTACTO</p>
-                  </Link>
-                  <div className={styles.indicator}></div>
-                </div>
-              </Magnetic>
+             
             </div>
           </div>
           <div ref={button} className={styles.headerButtonContainer}>

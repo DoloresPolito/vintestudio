@@ -2,7 +2,8 @@ import styles from "./style.module.scss";
 import Rounded from "../../common/RoundedButton";
 import { useRef } from "react";
 import { useScroll, motion, useTransform } from "framer-motion";
-
+import Link from "next/link";
+import styled from "styled-components"
 export default function Index() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -26,18 +27,27 @@ export default function Index() {
             part of your project.
           </p>
           <motion.div style={{ x }} className={styles.buttonContainer}>
-            <Rounded backgroundColor={"#334BD3"} className={styles.button}>
+          <StyledLink href='mailto:dolores.polito@gmail.com' target="_blank">
+            <Rounded backgroundColor={"#7a8aed"} className={styles.button}>
               <p>Get in touch</p>
             </Rounded>
+            </StyledLink>
           </motion.div>
         </div>
         <div className={styles.nav}>
+        <StyledLink href='mailto:dolores.polito@gmail.com' target="_blank">
           <Rounded>
-            <p>vintestudio@gmail.com</p>
+           
+     
+            <p>dolores.polito@gmail.com</p>
+  
           </Rounded>
+          </StyledLink>
+          <StyledLink href='https://api.whatsapp.com/send/?phone=543446584076' target="_blank">
           <Rounded>
             <p>+543446584976</p>
           </Rounded>
+          </StyledLink>
         </div>
         <div className={styles.info}>
           <div>
@@ -53,3 +63,8 @@ export default function Index() {
     </motion.div>
   );
 }
+
+
+const StyledLink = styled(Link)`
+text-decoration: none;
+`
