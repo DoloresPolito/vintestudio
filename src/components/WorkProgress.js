@@ -155,7 +155,7 @@ const Content = styled(motion.div)`
       /* background-color: #f9f9f9 !important; */
     }
     @media only screen and (max-width: 1160px) {
-      width: 400px;
+      width: 300px;
       padding: 3px;
     }
 

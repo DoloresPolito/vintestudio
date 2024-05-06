@@ -5,6 +5,7 @@
     padding-right: 200px;
     flex-direction: column;
     margin-top: 50px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 1000px) {
        padding-left: 0px;
