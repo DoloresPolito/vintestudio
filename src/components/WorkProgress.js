@@ -18,6 +18,7 @@ const WorkProgress2 = () => {
       <WorkProgressSection
 
       >
+        <h2>WORK PROGRESS</h2>
         <Content >
           <div>
             <Icons>
@@ -120,6 +121,17 @@ const WorkProgressSection = styled.div`
   justify-content: center;
 
   margin-top: 100px;
+
+  h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 28px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #4a4747;
+    text-align: center;
+    margin-bottom: 100px;
+  }
 
 
   @media only screen and (max-width: 1160px) {

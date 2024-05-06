@@ -29,80 +29,120 @@ export default function Index() {
     };
   }, []);
   return (
-    <motion.div
-      style={{ y }}
-      ref={container}
-      className={styles.contact}
-      id="contact"
-    >
-      <div className={styles.body}>
-        <div className={styles.title}>
-          <h2>
-            Lets work <span> together </span>
-          </h2>
+    <>
+      {width > 1000 ? (
+        <>
+          <motion.div
+            style={{ y }}
+            ref={container}
+            className={styles.contact}
+            id="contact"
+          >
+            <div className={styles.body}>
+              <div className={styles.title}>
+                <h2>
+                  Lets work <span> together </span>
+                </h2>
 
-          <p>
-            Feel free to send us an e-mail with any question. Wed love to be
-            part of your project.
-          </p>
-          {width > 1000 ? (<>
-            <motion.div style={{ x }} className={styles.buttonContainer}>
-            <StyledLink href="mailto:dolores.polito@gmail.com" target="_blank">
-              <Rounded backgroundColor={"#7a8aed"} className={styles.button}>
-                <p>Get in touch</p>
-              </Rounded>
-            </StyledLink>
+                <p>
+                  Feel free to send us an e-mail with any question. Wed love to
+                  be part of your project.
+                </p>
+
+                <motion.div style={{ x }} className={styles.buttonContainer}>
+                  <StyledLink
+                    href="mailto:dolores.polito@gmail.com"
+                    target="_blank"
+                  >
+                    <Rounded
+                      backgroundColor={"#7a8aed"}
+                      className={styles.button}
+                    >
+                      <p>Get in touch</p>
+                    </Rounded>
+                  </StyledLink>
+                </motion.div>
+              </div>
+
+              <>
+                <div className={styles.nav}>
+                  <StyledLink
+                    href="mailto:dolores.polito@gmail.com"
+                    target="_blank"
+                  >
+                    <Rounded>
+                      <p>dolores.polito@gmail.com</p>
+                    </Rounded>
+                  </StyledLink>
+                  <StyledLink
+                    href="https://api.whatsapp.com/send/?phone=543446584076"
+                    target="_blank"
+                  >
+                    <Rounded>
+                      <p>+543446584976</p>
+                    </Rounded>
+                  </StyledLink>
+                </div>
+              </>
+
+              <div className={styles.info}>
+                <div>
+                  <span>
+                    <p>2024 © vinte studio | All rights reserved</p>
+                  </span>
+                </div>
+              </div>
+            </div>
           </motion.div>
-          </>) : (<></>)}
-         
-        </div>
+        </>
+      ) : (
+        <>
+         <div
+       
+            className={styles.contact}
+            id="contact"
+          >
+            <div className={styles.body}>
+              <div className={styles.title}>
+                <h2>
+                  Lets work <span> together </span>
+                </h2>
 
-        {width > 1000 ? (
-          <>
-            <div className={styles.nav}>
-              <StyledLink
-                href="mailto:dolores.polito@gmail.com"
-                target="_blank"
-              >
-                <Rounded>
-                  <p>dolores.polito@gmail.com</p>
-                </Rounded>
-              </StyledLink>
-              <StyledLink
-                href="https://api.whatsapp.com/send/?phone=543446584076"
-                target="_blank"
-              >
-                <Rounded>
-                  <p>+543446584976</p>
-                </Rounded>
-              </StyledLink>
-            </div>
-          </>
-        ) : (
-          <>
-            <div className={styles.nav}>
-              <StyledLink
-                href="mailto:dolores.polito@gmail.com"
-                target="_blank"
-              >
-                <Rounded>
-                  <p>dolores.polito@gmail.com</p>
-                </Rounded>
-              </StyledLink>
-             
-            </div>
-          </>
-        )}
+                <p>
+                  Feel free to send us an e-mail with any question. Wed love to
+                  be part of your project.
+                </p>
 
-        <div className={styles.info}>
-          <div>
-            <span>
-              <p>2024 © vinte studio | All rights reserved</p>
-            </span>
+              
+              </div>
+
+              <>
+                <div className={styles.nav}>
+                  <StyledLink
+                    href="mailto:dolores.polito@gmail.com"
+                    target="_blank"
+                  >
+                    <Rounded>
+                      <p>dolores.polito@gmail.com</p>
+                    </Rounded>
+                  </StyledLink>
+                
+                </div>
+              </>
+
+              <div className={styles.info}>
+                <div>
+                  <span>
+                    <p>2024 © vinte studio | All rights reserved</p>
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </motion.div>
+        
+        </>
+      )}
+    </>
   );
 }
 
