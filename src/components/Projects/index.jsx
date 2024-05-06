@@ -9,25 +9,31 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "C2 Montreal",
+    title: "N1u",
     src: "c2montreal.png",
     color: "#000000"
   },
   {
-    title: "Office Studio",
+    title: "Mimic Fi",
     src: "officestudio.png",
     color: "#8C8C8C"
   },
   {
-    title: "Locomotive",
+    title: "ETH LATAM",
     src: "locomotive.png",
     color: "#EFE8D3"
   },
   {
-    title: "Silencio",
+    title: "Sukha Tents",
     src: "silencio.png",
     color: "#706D63"
-  }
+  },
+  {
+    title: "A.pb Arch",
+    src: "silencio.png",
+    color: "#706D63"
+  },
+ 
 ]
 
 const scaleAnimation = {

@@ -12,6 +12,7 @@
         position: relative;
         z-index: 1;
         transition: color 0.4s linear;
+        font-family: var(--font-inter);
     }
 
     &:hover{
