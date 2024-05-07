@@ -27,8 +27,8 @@ export default function Index() {
     gsap.to(button.current, {
       scrollTrigger: {
         trigger: document.documentElement,
-        start: 0,
-        end: window.innerHeight,
+        start: 50,
+        end: 100,
         onLeave: () => {
           gsap.to(button.current, {
             scale: 1,
@@ -69,13 +69,13 @@ export default function Index() {
       {width > medium ? (
         <>
           <div ref={header} className={styles.header}>
-            <div className={styles.logo}>
-              <Image
-                src={logo}
-                alt="logo"
-                style={{ height: "32px", width: "350px" }}
-              />
-            </div>
+              <div className={styles.logo}>
+                {/* <Image
+                  src={logo}
+                  alt="logo"
+                  style={{ height: "32px", width: "350px" }}
+                /> */}
+              </div>
             <div className={styles.nav}>
               <Magnetic>
                 <div className={styles.el}>
@@ -83,7 +83,7 @@ export default function Index() {
                     to="services"
                     spy={true}
                     smooth={true}
-                    offset={-40}
+                    offset={10}
                     duration={800}
                   >
                     <p>services</p>
@@ -144,11 +144,11 @@ export default function Index() {
             <div ref={header} className={styles.header}>
               <div className={styles.headercontainer}>
               <div className={styles.logo}>
-              <Image
+              {/* <Image
                 src={logo}
                 alt="logo"
                 style={{ height: "20px", width: "250px" }}
-              />
+              /> */}
             </div>
 
                 <div ref={button} className={styles.headerButtonContainerMobile}>

@@ -44,24 +44,24 @@ export default function Index() {
                   Lets work <span> together </span>
                 </h2>
 
-                <p>
+                <p className={styles.subtitle}>
                   Feel free to send us an e-mail with any question. Wed love to
                   be part of your project.
                 </p>
 
-                <motion.div style={{ x }} className={styles.buttonContainer}>
+                {/* <motion.div style={{ x }} className={styles.buttonContainer}>
                   <StyledLink
                     href="mailto:dolores.polito@gmail.com"
                     target="_blank"
                   >
                     <Rounded
-                      backgroundColor={"#7a8aed"}
+                      backgroundColor={"#eb612b"}
                       className={styles.button}
                     >
                       <p>Get in touch</p>
                     </Rounded>
                   </StyledLink>
-                </motion.div>
+                </motion.div> */}
               </div>
 
               <>

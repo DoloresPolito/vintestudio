@@ -1,15 +1,15 @@
 .roundedButton{
     border-radius: 3em;
-    border: 1px solid rgb(136, 136, 136);
+    border: 1px solid #4a4747;
     cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 60px 15px 60px;
+    padding: 1px 15px 1px 15px;
 
     @media screen and (max-width: 1000px) {
-        padding: 5px 30px 5px 30px;
+        padding: 1px 15px 1px 15px;
     }
   
     p{
@@ -23,6 +23,7 @@
     }
 
     &:hover{
+        border: 1px solid #eb612b;
         p{
             color: white;
         }

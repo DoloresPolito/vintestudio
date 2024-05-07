@@ -6,17 +6,17 @@ import Lenis from '@studio-freight/lenis'
 import { useTransform, useScroll, motion } from 'framer-motion';
 
 const images = [
-  "work/n1u1.png",
-  "work/n1u2.png",
+  "work/n1u.1.png",
+  "work/n1u.2.png",
+  "work/n1u.3.png",
+  "work/sukha.1.png",
+  "work/n1u.3.png",
   "work/n1u3.png",
-  "work/4.png",
-  "work/n1u3.png",
-  "work/n1u3.png",
-  "work/7.png",
-  "work/2.png",
-  "work/sukha3.png",
-  "work/sukha1.png",
-  "work/sukha2.png",
+  "work/koi.3.png",
+  "work/koi.4.png",
+  "work/koi.1.png",
+  "work/ines.1.png",
+  "work/koi.3.png",
   "work/1.png",
 ]
 
@@ -83,6 +83,8 @@ const Column = ({images, y}) => {
               src={`/${src}`}
               alt='image'
               fill
+       
+        
             />
           </div>
         })

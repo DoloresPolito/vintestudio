@@ -21,9 +21,9 @@ const WorkProgress2 = () => {
         <h2>Work Progress</h2>
         <Content >
           <div>
-            <Icons>
+            {/* <Icons>
               <Image src={dialogo} alt="discuss" />
-            </Icons>
+            </Icons> */}
 
             <Numbers>
               <p>1. </p>
@@ -42,9 +42,9 @@ const WorkProgress2 = () => {
           </div>
 
           <div>
-            <Icons>
+            {/* <Icons>
               <Image src={text} alt="computer" />
-            </Icons>
+            </Icons> */}
 
             <Numbers>
               <p>2.</p>
@@ -64,9 +64,9 @@ const WorkProgress2 = () => {
           </div>
 
           <div>
-            <Icons>
+            {/* <Icons>
               <Image src={book} alt="text" />
-            </Icons>
+            </Icons> */}
 
             <Numbers>
               <p>3.</p>
@@ -85,9 +85,9 @@ const WorkProgress2 = () => {
           </div>
 
           <div>
-            <Icons>
+            {/* <Icons>
               <Image src={computer} alt="book" />
-            </Icons>
+            </Icons> */}
 
             <Numbers>
               <p>4.</p>
@@ -127,8 +127,8 @@ const WorkProgressSection = styled.div`
         font-size: 50px;
         line-height: 22px;
         letter-spacing: 2px;
-        font-weight: 400;
-        color: #4a4747;
+        font-weight: 300;
+        color: #eb612b;
         text-align: center;
         margin-bottom: 100px;
   }
@@ -152,6 +152,7 @@ const Content = styled(motion.div)`
   height: 70%;
   align-items: center;
   justify-content: center;
+  margin-top: -60px;
 
   @media only screen and (max-width: 1160px) {
   }
@@ -214,8 +215,8 @@ const Titles = styled.div`
     font-size: 18px;
     line-height: 22px;
     letter-spacing: 2px;
-    font-weight: 200;
-    color: #4a4747;
+    font-weight: 400;
+    color: #eb612b;
     text-align: center;
     width: 250px;
     @media only screen and (max-width: 1160px) {
@@ -242,10 +243,10 @@ const Numbers = styled.div`
 
   p {
     font-family: "Montserrat", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     line-height: 20px;
     letter-spacing: 1px;
-    font-weight: 600;
+    font-weight: 400;
     color: #4a4747;
     text-align: center;
     width: 250px;
@@ -267,8 +268,8 @@ const Texts = styled.div`
 
   p {
     font-family: "Montserrat", sans-serif;
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 25px;
     letter-spacing: 1px;
     font-weight: 200;
     color: #4a4747;

@@ -11,9 +11,10 @@
     padding-right: 0px;
     width: 95%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
+
   }
   .body {
     max-width: 1400px;
@@ -42,13 +43,16 @@
         font-weight: 200;
         font-family: "Montserrat", sans-serif !important;
 
+ 
+
         @media screen and (max-width: 1000px) {
-          font-size: 20px;
+          font-size: 20px;  line-height: 1.8;
         }
  
         span {
           margin-right: 3px;
-          color:#4a4747;
+          color:#4a4747;     
+    
         }
         .mask {
           position: relative;

@@ -1,6 +1,6 @@
 "use client";
 import styles from "./style.module.scss";
-import { useRef, useLayoutEffect, useState } from "react";
+import { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "../../../node_modules/gsap/ScrollTrigger";
@@ -48,6 +48,23 @@ export default function Home() {
   const { x, y } = useMousePosition();
   const size = isHovered ? 400 : 40;
 
+  const [width, setWidth] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+
   return (
     <motion.main
       variants={slideUp}
@@ -87,7 +104,7 @@ export default function Home() {
         </div>
       </main> */}
      <NewHeader />
-      <Image src="/images/home.jpeg" fill={true} alt="background" />
+      <Image src={width > 800 ? "/images/background5.png" : "/images/background-mobile.png"} fill={true} alt="background" />
       <div className={styles.sliderContainer}>
 
       <div ref={slider} className={styles.slider}>
@@ -95,7 +112,7 @@ export default function Home() {
           <p ref={secondText}>  We are <span>crafters</span> of new generations websites. </p>
         </div>
       </div>
-      {/* <div data-scroll data-scroll-speed={0.1} className={styles.description}>
+      <div data-scroll data-scroll-speed={0.1} className={styles.description}>
         <svg
           width="9"
           height="9"
@@ -105,11 +122,11 @@ export default function Home() {
         >
           <path
             d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
-            fill="white"
+            fill="#ec4e39"
           />
         </svg>
         <p>Desig & Development</p>
-      </div> */}
+      </div>
     </motion.main>
   );
 }

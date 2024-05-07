@@ -48,7 +48,7 @@ export default function Index() {
             })}
           </p>
 
-          {width > 1000 ? (
+          {/* {width > 1000 ? (
             <>
               <div data-scroll data-scroll-speed={0.1}>
                 <Rounded className={styles.button}>
@@ -58,7 +58,7 @@ export default function Index() {
             </>
           ) : (
             <></>
-          )}
+          )} */}
         </div>
       </div>
       <WorkProgress2 />
