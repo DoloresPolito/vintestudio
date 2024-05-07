@@ -125,7 +125,7 @@ export default function Home() {
             fill="#ec4e39"
           />
         </svg>
-        <p>Desig & Development</p>
+        <p>Design & Development</p>
       </div>
     </motion.main>
   );
