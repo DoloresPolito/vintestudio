@@ -61,7 +61,7 @@ export default function Index() {
           )} */}
         </div>
       </div>
-      <WorkProgress2 />
+      {/* <WorkProgress2 /> */}
       <Projects />
     </>
   );

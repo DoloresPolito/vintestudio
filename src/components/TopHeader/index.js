@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { opacity, background } from './anim';
-import Nav from './nav';
+import Nav from './Nav';
 
 export default function Index() {
 

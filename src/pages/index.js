@@ -10,6 +10,8 @@ import Contact from "../components/Contact";
 import GridScroll from "../components/GridScroll";
 import "./page.module.scss";
 import TopHeader from "../components/TopHeader";
+import CardsSection from "@/components/CardsSection";
+
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -50,6 +52,7 @@ export default function Home() {
       <TopHeader />
       <Landing />
       <Description />
+      <CardsSection />
 
       {width > 800 ? (
         <>
