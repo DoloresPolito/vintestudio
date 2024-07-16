@@ -5,27 +5,52 @@
     justify-content: center;
     position: sticky;
     top: 0px;
+
     .card{
       display: flex;
       flex-direction: column;
       position: relative;
       top: -25%;
-      height: 400px;
+      height: 500px;
       width: 1000px;
       border-radius: 25px;
       padding:40px;
       margin-top: 50px;
       transform-origin: top;
+
+      .iconcontainer{
+        background-color: #dcdcdc;
+        height: 50px;
+        width: 50px;
+        position: absolute;
+        top:30px;
+        left: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+          height: 20px;
+          width: 20px;
+        }
+      }
       h2{
-        text-align: center;
+        // text-align: center;
         margin: 0px;
         font-size: 28px;
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        color:#626262;
+        margin-top: 20px;
       }
       .body{
         display: flex;
         height: 100%;
         margin-top: 50px;
         gap: 50px;
+      
   
         .description{
           width: 40%;
@@ -33,6 +58,11 @@
           top: 10%;
           p{
             font-size: 16px;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            color:#626262;
+            margin-top: 40px;
             &::first-letter{
               font-size: 28px;
               font-family: 'Title';

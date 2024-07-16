@@ -29,7 +29,7 @@ export default function Index() {
   const isInView = useInView(description);
   return (
     <>
-      <div ref={description} className={styles.description} id="services">
+      <div ref={description} className={styles.description} id="description">
         <div className={styles.body}>
           <p>
             {phrase.split(" ").map((word, index) => {
@@ -62,7 +62,7 @@ export default function Index() {
         </div>
       </div>
       {/* <WorkProgress2 /> */}
-      <Projects />
+      {/* <Projects /> */}
     </>
   );
 }

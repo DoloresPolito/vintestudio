@@ -13,7 +13,7 @@ export default function CardsSection() {
   });
 
   return (
-    <main ref={container} className={styles.main}>
+    <main ref={container} className={styles.main} id="work">
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.05;
         return (
