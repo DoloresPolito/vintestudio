@@ -103,7 +103,7 @@ export default function Home() {
           </p>
         </div>
       </main> */}
-     <NewHeader />
+     {/* <NewHeader /> */}
       <Image src={width > 800 ? "/images/background5.png" : "/images/background-mobile.png"} fill={true} alt="background" />
       <div className={styles.sliderContainer}>
 

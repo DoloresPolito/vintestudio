@@ -8,8 +8,8 @@ import Description from "../components/Description";
 // import SlidingImages from "../components/SlidingImages";
 import Contact from "../components/Contact";
 import GridScroll from "../components/GridScroll";
-import './page.module.scss'
-
+import "./page.module.scss";
+import TopHeader from "../components/TopHeader";
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -42,18 +42,24 @@ export default function Home() {
     };
   }, []);
 
-
   return (
     <>
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         {isLoading && <Preloader />}
-      </AnimatePresence>
+      </AnimatePresence> */}
+      <TopHeader />
       <Landing />
       <Description />
-   
-   {width > 800 ? (<>      <GridScroll /></>) : (<></>)}
 
-    
+      {width > 800 ? (
+        <>
+          {" "}
+          <GridScroll />
+        </>
+      ) : (
+        <></>
+      )}
+
       <Contact />
     </>
   );
