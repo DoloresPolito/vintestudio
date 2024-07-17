@@ -1,5 +1,5 @@
 import { Fira_Sans, Josefin_Sans } from "next/font/google";
-import { ThemeProvider, useTheme } from "../context/ThemeContext";
+import { ThemeProvider, useTheme } from "../context/Themecontext";
 import "./globals.scss";
 
 // const fira = Fira_Sans({

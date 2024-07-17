@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import styles from './style.module.scss'; 
-import { useTheme } from '../../context/ThemeContext'; 
+import { useTheme } from '../../context/Themecontext'; 
 
 const ColorLayout = ({ children }) => {
   const { theme, toggleTheme, fonts } = useTheme();
