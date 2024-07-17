@@ -14,7 +14,7 @@ const Card = ({
   progress,
   range,
   targetScale,
-  icon, image, id
+  icon, image, id,zindex
 }) => {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -29,7 +29,8 @@ const Card = ({
     <div ref={container} className={styles.cardContainer}>
       <motion.div
         style={{
-          backgroundColor: color,
+          // backgroundColor: color,
+          zIndex:zindex,
           scale,
           top: `calc(-5vh + ${i * 25}px)`,
         }}

@@ -20,8 +20,10 @@
     margin-top: 50px;
     transform-origin: top;
 
+    border:1px solid ;
+
     .iconcontainer {
-      background-color: #dcdcdc;
+      // background-color: #dcdcdc;
       height: 50px;
       width: 50px;
       position: absolute;
@@ -44,7 +46,7 @@
 
       font-weight: 600;
       font-style: normal;
-      color: #626262;
+      // color: #626262;
       margin-top: 20px;
 
       text-transform: uppercase;
@@ -65,7 +67,7 @@
 
           font-weight: 400;
           font-style: normal;
-          color: #626262;
+          // color: #626262;
           margin-top: 40px;
 
           font-family: var(--font-jose);

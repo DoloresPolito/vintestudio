@@ -36,7 +36,7 @@
       margin: 0px;
       text-align: center;
       font-family: var(--font-jose);
-      color:red;
+
    
       &:nth-of-type(1) {
         font-size: 36px;
@@ -53,7 +53,7 @@
  
         span {
           margin-right: 3px;
-          color:#4a4747;   
+  
           font-family: var(--font-jose);
     
         }
@@ -67,7 +67,7 @@
         font-size: 18px;
         width: 80%;
         font-weight: 300;
-        color: white;
+
   
       }
     }
@@ -76,8 +76,6 @@
       left: calc(100% - 200px);
       width: 180px;
       height: 180px;
-      background-color: #6370c2;
-      color: white;
       border-radius: 50%;
       position: absolute;
       display: flex;

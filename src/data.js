@@ -7,7 +7,8 @@ export const projects = [
       link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
       color: "#f5f5f5",
       icon: "discuss.png",
-      image:"chat1.png"
+      image:"chat1.png",
+      zindex:100,
 
     },
     {
@@ -18,7 +19,8 @@ export const projects = [
       link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
       color: "#f5f5f5",
       icon: "discuss.png",
-      image:"foco2.png"
+      image:"foco2.png",
+      zindex:200,
     },
     {
       id:3,
@@ -28,7 +30,8 @@ export const projects = [
       link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
       color: "#f5f5f5",
       icon: "production.png",
-      image:"computer1.png"
+      image:"computer1.png",
+      zindex:300,
     },
     
   ]

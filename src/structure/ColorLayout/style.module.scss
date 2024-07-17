@@ -1,0 +1,25 @@
+.themeSwitcher {
+  position: fixed;
+  top: 10px;
+  left: 80%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10000;
+
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--text); /* Color de texto inicial */
+    border-radius: 5px;
+    border: 1px solid var(--text); /* Borde inicial */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones añadidas para color de fondo y color de texto */
+
+    &:hover {
+      background-color: var(--text); /* Cambia el fondo al color de texto */
+      color: var(--background); /* Cambia el texto al color de fondo */
+    }
+  }
+}

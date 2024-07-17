@@ -17,13 +17,14 @@
     .slider{
       position: relative;
       white-space: nowrap;
+      // background-color: rgb(204, 204, 204);
     }
     
     .slider p{
       position: relative;
       margin: 0px;
-      color: #4a4747;
-      font-size: 150px;
+      // color: #4a4747;
+      font-size: 50px;
       font-weight: 400;
       padding-right: 50px;
       font-family: "Montserrat", sans-serif;
@@ -47,7 +48,7 @@
       position: absolute;
       top: 45%;
       left: 65%;
-      color: #4a4747;
+      // color: #4a4747;
       font-size: 24px;
       font-weight: 300;
       @media screen and (max-width: 800px) {
@@ -59,7 +60,7 @@
         margin: 0px;
         margin-bottom: 10px;
         font-family: "Montserrat", sans-serif;
-        color: #ec4e39;
+        // color: #ec4e39;
         font-weight: 300;
 
       }
@@ -80,7 +81,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #afa18f;
+      // color: #afa18f;
       font-size: 84px;
       line-height: 66px;
       cursor: default;
@@ -93,7 +94,7 @@
 
       }
       span{
-        color: #ec4e39;
+        // color: #ec4e39;
       }
     }
   
@@ -101,8 +102,8 @@
       mask-image: url('/mask.svg');
       mask-repeat: no-repeat;
       mask-size: 40px;
-      background: #ec4e39;
+      // background: #ec4e39;
       position: absolute;
-      color: black;
+      // color: black;
     }
   }

@@ -12,6 +12,7 @@ import TopHeader from "../components/TopHeader";
 import CardsSection from "@/components/CardsSection";
 import Projects2 from "@/components/Projects2";
 
+import Layout from "../structure/ColorLayout";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,27 +48,27 @@ export default function Home() {
 
   return (
     <>
-      {/* <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence> */}
-      <TopHeader />
-      {/* <Landing /> */}
-      <Description />
-      <CardsSection />
-      <Projects2 />
+      <Layout>
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader />}
+        </AnimatePresence>
+        <TopHeader />
+        {/* <Landing /> */}
+        <Description />
+        <CardsSection />
+        <Projects2 />
 
-     
+        {width > 800 ? (
+          <>
+            {" "}
+            <GridScroll />
+          </>
+        ) : (
+          <></>
+        )}
 
-      {width > 800 ? (
-        <>
-          {" "}
-          <GridScroll />
-        </>
-      ) : (
-        <></>
-      )}
-
-      <Contact />
+        <Contact />
+      </Layout>
     </>
   );
 }

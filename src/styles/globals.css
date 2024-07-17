@@ -1,11 +1,21 @@
-@font-face {
-    font-family: 'Avant Garde Book BT';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/public/fonts/AVGARDD_2.woff') format('woff');
+@import './variables';
+
+body {
+  background-color: var(--background);
+  color: var(--text);
 }
 
-body{
-    margin: 0px;
-    font-family: 'Avant Garde Book BT';
+.theme-1 {
+  --background: #{$theme-1-background};
+  --text: #{$theme-1-text};
+}
+
+.theme-2 {
+  --background: #{$theme-2-background};
+  --text: #{$theme-2-text};
+}
+
+.theme-3 {
+  --background: #{$theme-3-background};
+  --text: #{$theme-3-text};
 }

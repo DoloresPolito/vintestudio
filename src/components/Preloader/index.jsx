@@ -41,7 +41,8 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
-                <Image src={logo} alt="logo"/>
+                {/* <Image src={logo} alt="logo"/> */}
+                <h2>VINTE STUDIO</h2>
                 <motion.p variants={opacity} initial="initial" animate="enter">{words[index]}</motion.p>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>

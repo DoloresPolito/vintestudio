@@ -18,7 +18,8 @@ export default function Index() {
                 <Link href="/">
                     
                
-                    <Image src={logo} alt="logo"/>
+                    {/* <Image src={logo} alt="logo"/> */}
+                    <h2>VINTE STUDIO</h2>
                     </Link>
                 <div onClick={() => {setIsActive(!isActive)}} className={styles.el}>
                     <div className={`${styles.burger} ${isActive ? styles.burgerActive : ""}`}></div>

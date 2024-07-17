@@ -1,14 +1,9 @@
-import "./globals.css";
-import Header from "../components/Header";
-// import { AnimatePresence } from "framer-motion";
 
-import { Montserrat, Fira_Sans, Josefin_Sans } from "next/font/google";
+import { Fira_Sans, Josefin_Sans } from "next/font/google";
+import { ThemeProvider, useTheme } from '../context/ThemeContext';
+import './globals.scss';
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-montserrat",
-});
+
 
 const fira = Fira_Sans({
   subsets: ["latin"],
@@ -33,10 +28,12 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+          <ThemeProvider>
       <body className={`${josefina.variable} font-sans`}>
    
         {children}
       </body>
+      </ThemeProvider>
     </html>
   );
 }

@@ -1,17 +1,17 @@
 .contact {
-  color: #4a4747;
+  // color: #4a4747;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  // background-color: white;
   position: relative;
 
   .body {
     padding-top: 200px;
     width: 100%;
     max-width: 1800px;
-    background-color: white;
+    // background-color: white;
 
     @media screen and (max-width: 1000px) {
       margin: 0 auto;
@@ -27,7 +27,7 @@
       margin-left: 200px;
       margin-right: 200px;
       position: relative;
-      font-family: "Montserrat", sans-serif !important;
+      font-family: var(--font-jose);
 
       @media screen and (max-width: 1000px) {
         margin-left: 0px;
@@ -35,19 +35,19 @@
       }
 
       .subtitle {
-        font-family: "Montserrat", sans-serif;
+        font-family: var(--font-jose);
         font-size: 20px;
         line-height: 25px;
         letter-spacing: 1px;
         font-weight: 200;
-        color: #4a4747;
+        // color: #4a4747;
       }
 
       span {
         display: flex;
         align-items: center;
-        color: #ff530d;
-        font-family: "Montserrat", sans-serif !important;
+        // color: #ff530d;
+        font-family: var(--font-jose);
         font-weight: 500;
         .imageContainer {
           width: 100px;
@@ -68,6 +68,7 @@
         font-size: 80px;
         margin: 0px;
         font-weight: 300;
+        font-family: var(--font-jose);
         // @media screen and (max-width: 800px) {
         //   font-size: 60px;
         // }
@@ -83,17 +84,18 @@
       .button {
         width: 180px;
         height: 180px;
-        background-color: #cfcfcf;
-        color: #eb612b;
+        // background-color: #cfcfcf;
+        // color: #eb612b;
         border-radius: 50%;
         position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        
         &:hover {
           p {
-            color: white;
+            // color: white;
           }
         }
 
@@ -103,7 +105,7 @@
           font-weight: 500;
           z-index: 2;
           position: relative;
-          font-family: "Montserrat", sans-serif !important;
+          font-family: var(--font-jose);
         }
       }
       svg {
@@ -139,20 +141,21 @@
           margin: 0px;
           padding: 2.5px;
           cursor: pointer;
-          font-family: "Montserrat", sans-serif !important;
+          font-family: var(--font-jose);
         }
         p {
           &::after {
             content: "";
             width: 0%;
             height: 1px;
-            background-color: white;
+            // background-color: white;
             display: block;
             margin-top: 2px;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
             transition: width 0.2s linear;
+            font-family: var(--font-jose);
           }
           &:hover {
             &::after {
@@ -164,12 +167,14 @@
           display: flex;
           flex-direction: column;
           gap: 15px;
+          font-family: var(--font-jose);
         }
         h3 {
-          color: grey;
+          // color: grey;
           cursor: default;
           font-weight: 300;
           font-size: 1em;
+          font-family: var(--font-jose);
         }
       }
     }
