@@ -9,26 +9,26 @@ import Rounded from "../../common/RoundedButton";
 
 const projects = [
   {
-    title: "n1u",
+    title: "N1U",
     src: "n1u.png",
     color: "#706D63",
     link: "https://n1u.app/",
   },
   {
-    title: "Koibanx",
+    title: "KOIBANX",
     src: "koi.png",
     color: "#8C8C8C",
     link: "https://koibanx.com/",
   },
 
   {
-    title: "Sukha Tents",
+    title: "SUKHA TENTS",
     src: "sukha.png",
     color: "#706D63",
     link: "https://sukhanew.vercel.app/",
   },
   {
-    title: "Ines Miguens Photo",
+    title: "INES MIGUENS PHOTO",
     src: "ines.png",
     color: "black",
     link: "https://inesmiguens.vercel.app/",
@@ -146,9 +146,9 @@ export default function Projects() {
           );
         })}
       </div>
-      <Rounded>
+      {/* <Rounded>
         <p>More work</p>
-      </Rounded>
+      </Rounded> */}
 
       {width > 800 ? (
         <>

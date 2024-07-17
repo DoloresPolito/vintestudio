@@ -1,10 +1,9 @@
 import styles from "./style.module.scss";
 import { useInView, motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { slideUp, opacity } from "./animation";
+import { slideUp} from "./animation";
 import Rounded from "../../common/RoundedButton";
-import WorkProgress2 from "../WorkProgress";
-import Projects from "../Projects";
+
 export default function Index() {
   const [width, setWidth] = useState(null);
 
@@ -48,7 +47,7 @@ export default function Index() {
             })}
           </p>
 
-          {/* {width > 1000 ? (
+          {width > 1000 ? (
             <>
               <div data-scroll data-scroll-speed={0.1}>
                 <Rounded className={styles.button}>
@@ -58,11 +57,10 @@ export default function Index() {
             </>
           ) : (
             <></>
-          )} */}
+          )}
         </div>
       </div>
-      {/* <WorkProgress2 /> */}
-      {/* <Projects /> */}
+
     </>
   );
 }

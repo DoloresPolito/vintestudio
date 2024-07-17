@@ -3,13 +3,14 @@
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 100px 50px 100px;
-  border-top: 1px solid rgb(201, 201, 201);
+  padding: 30px 50px 30px 50px;
+  border-top: 1px solid var(--text);
   cursor: pointer;
   transition: all 0.2s;
   overflow-x: hidden;
 
   width: 800px;
+
 
   @media screen and (max-width: 1000px) {
 
@@ -21,16 +22,16 @@
     width: 300px;
   }
   .worktitle {
-    font-size: 50px;
+    font-size: 30px;
     margin: 0px;
     font-weight: 300;
     transition: all 0.4s;
-    font-family: "Montserrat", sans-serif !important;
-    color: #4a4747;
+    font-family: "Josefin Sans", sans-serif !important;
+    color: var(--text);
 
     @media screen and (max-width: 1000px) {
       font-size: 20px;
-    
+  
       justify-self: flex-start;
       text-align: left;
   
@@ -42,12 +43,12 @@
     font-weight: 300;
     font-family: "Montserrat", sans-serif !important;
     text-decoration: none;
-    color: #4a4747;
+    color: var(--text);
 
   }
 
   &:last-of-type {
-    border-bottom: 1px solid rgb(201, 201, 201);
+    border-bottom: 1px solid var(--text);
   }
 
   &:hover {

@@ -4,7 +4,8 @@
     gap: 3vw;
     position: relative;
     margin-top: 200px;
-    background-color: white;
+    background-color: red;
+
     z-index: 1;
     .slider{
         display: flex;
@@ -29,7 +30,7 @@
         }
     }
     .circleContainer{
-        background-color: red;
+     
         position: relative;
         margin-top: 100px;
         .circle{

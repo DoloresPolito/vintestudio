@@ -10,7 +10,7 @@ import GridScroll from "../components/GridScroll";
 import "./page.module.scss";
 import TopHeader from "../components/TopHeader";
 import CardsSection from "@/components/CardsSection";
-import Projects2 from "@/components/Projects2";
+import Projects from "@/components/Projects";
 import { useEffect, useState } from "react";
 import Layout from "../structure/ColorLayout";
 
@@ -68,7 +68,7 @@ export default function Home() {
               <Landing />
               <Description />
               <CardsSection />
-              <Projects2 />
+              <Projects />
               {width > 800 && <GridScroll />}
               <Contact />
             </div>
