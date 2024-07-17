@@ -39,6 +39,7 @@ export default function Body({
         const { title, href } = link;
         return (
           <Link
+          key={href}
             to={href}
             spy={true}
             smooth={true}

@@ -11,7 +11,7 @@ export default function Footer() {
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Made by:</span>Studio Lumio
+                    <span>Made by:</span>Vinte Studio
                 </motion.li>
             </ul>
             <ul>
@@ -20,10 +20,10 @@ export default function Footer() {
                     variants={translate} initial="initial" 
                     animate="enter" 
                     exit="exit">
-                    <span>Typography:</span> Google Fonts
+                    <span>EMAIL:</span> vintestudio@gmail.com
                 </motion.li>
             </ul>
-            <ul>
+            {/* <ul>
                 <motion.li
                     custom={[0.3, 0]} 
                     variants={translate} initial="initial" 
@@ -31,7 +31,7 @@ export default function Footer() {
                     exit="exit">
                     <span>Images:</span> Freepik, Envato
                 </motion.li>
-            </ul>
+            </ul> */}
             <ul>
                 <motion.li
                     custom={[0.3, 0]} 

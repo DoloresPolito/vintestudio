@@ -35,6 +35,8 @@
     p {
       margin: 0px;
       text-align: center;
+      font-family: var(--font-jose);
+      color:red;
    
       &:nth-of-type(1) {
         font-size: 36px;
@@ -51,7 +53,8 @@
  
         span {
           margin-right: 3px;
-          color:#4a4747;     
+          color:#4a4747;   
+          font-family: var(--font-jose);
     
         }
         .mask {
@@ -87,7 +90,7 @@
         font-weight: 300;
         position: relative;
         z-index: 1;
-        font-family: "Montserrat", sans-serif !important;
+
     
       }
     }

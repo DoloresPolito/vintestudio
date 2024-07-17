@@ -3,6 +3,8 @@ import styles from './style.module.scss';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { opacity, slideUp } from './anim';
+import logo from "../../../public/logoxs.png"
+import Image from 'next/image';
 
 const words = ["0%", "25%", "50%", "100%" ]
 
@@ -39,6 +41,7 @@ export default function Index() {
         <motion.div variants={slideUp} initial="initial" exit="exit" className={styles.introduction}>
             {dimension.width > 0 && 
             <>
+                <Image src={logo} alt="logo"/>
                 <motion.p variants={opacity} initial="initial" animate="enter">{words[index]}</motion.p>
                 <svg>
                     <motion.path variants={curve} initial="initial" exit="exit"></motion.path>

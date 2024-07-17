@@ -4,7 +4,7 @@
     width: 100%;
     box-sizing: border-box;
     padding: 10px;
-    z-index: 5000;
+    z-index: 1000;
     top:0;
 
     .background{
@@ -33,6 +33,7 @@
         }
 
         a{
+            
             text-decoration: none;
             color: black;
             position: absolute;
@@ -64,6 +65,7 @@
             }
 
             p{
+                font-family: var(--font-jose);
                 &:nth-of-type(2){
                     position: absolute;
                     opacity: 0;

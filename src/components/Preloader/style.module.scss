@@ -5,20 +5,30 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    z-index: 99;
-    background-color: #4a4747;
+    z-index: 2000;
+    background-color: #f4f0ea;
+
+    img{
+        position: absolute;
+        top: 230px;
+        width: 100%;
+        height: calc(100% + 300px);
+        z-index: 5000;
+        height: 100px;
+        width: auto;
+    }
     svg{
         position: absolute;
         top: 0;
         width: 100%;
         height: calc(100% + 300px);
         path{
-            fill: #4a4747;
+            fill: #f4f0ea;
         }
     }
     p{
         display: flex;
-        color: #ec4e39;
+        color: black;
         font-size: 42px;
         align-items: center;
         position: absolute;

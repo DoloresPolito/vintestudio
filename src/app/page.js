@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Landing from "../components/Landing";
-import Projects from "../components/Projects";
 import Description from "../components/Description";
 // import SlidingImages from "../components/SlidingImages";
 import Contact from "../components/Contact";
@@ -11,6 +10,8 @@ import GridScroll from "../components/GridScroll";
 import "./page.module.scss";
 import TopHeader from "../components/TopHeader";
 import CardsSection from "@/components/CardsSection";
+import Projects2 from "@/components/Projects2";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -50,9 +51,12 @@ export default function Home() {
         {isLoading && <Preloader />}
       </AnimatePresence> */}
       <TopHeader />
-      <Landing />
+      {/* <Landing /> */}
       <Description />
       <CardsSection />
+      <Projects2 />
+
+     
 
       {width > 800 ? (
         <>
