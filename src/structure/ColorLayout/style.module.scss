@@ -1,25 +1,26 @@
 .themeSwitcher {
   position: fixed;
-  top: 10px;
-  left: 80%;
-  transform: translateX(-50%);
+  top: 3vh; // Ajuste proporcional usando vh
+  right: 2vw; // Ajuste proporcional usando vw
+  // transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 1vw; // Ajuste proporcional usando vw
   z-index: 10000;
 
   button {
-    padding: 10px 20px;
+    // padding: 1vh 2vw; // Ajuste proporcional usando vh y vw
     cursor: pointer;
     border: none;
     background-color: transparent;
-    color: var(--text); /* Color de texto inicial */
-    border-radius: 5px;
-    border: 1px solid var(--text); /* Borde inicial */
-    transition: background-color 0.3s, color 0.3s; /* Transiciones añadidas para color de fondo y color de texto */
+    color: var(--text);
+    border-radius: 0.5vw; // Ajuste proporcional usando vw
+    border: 1px solid var(--text);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 2vh;
 
     &:hover {
-      background-color: var(--text); /* Cambia el fondo al color de texto */
-      color: var(--background); /* Cambia el texto al color de fondo */
+      background-color: var(--text);
+      color: var(--background);
     }
   }
 }

@@ -1,41 +1,27 @@
 .project {
   display: flex;
-  width: 100%;
+  width: 50vw; /* Ajuste proporcional usando vw */
   justify-content: space-between;
   align-items: center;
-  padding: 30px 50px 30px 50px;
+
+  padding: 3vh 5vw; /* Ajuste proporcional usando vh y vw */
   border-top: 1px solid var(--text);
   cursor: pointer;
   transition: all 0.2s;
   overflow-x: hidden;
+margin-left: 1vw;
 
-  width: 800px;
 
 
-  @media screen and (max-width: 1000px) {
-
-    width: 500px;
-  }
-
-  @media screen and (max-width: 600px) {
-
-    width: 300px;
-  }
   .worktitle {
-    font-size: 30px;
-    margin: 0px;
+    font-size: 3vw; /* Ajuste proporcional usando vw */
+    margin: 0;
     font-weight: 300;
     transition: all 0.4s;
     font-family: "Josefin Sans", sans-serif !important;
     color: var(--text);
 
-    @media screen and (max-width: 1000px) {
-      font-size: 20px;
-  
-      justify-self: flex-start;
-      text-align: left;
-  
-    }
+
   }
 
   p {
@@ -44,7 +30,6 @@
     font-family: "Montserrat", sans-serif !important;
     text-decoration: none;
     color: var(--text);
-
   }
 
   &:last-of-type {
@@ -55,11 +40,11 @@
     opacity: 0.5;
 
     h2 {
-      transform: translateX(-10px);
+      transform: translateX(-1vw); /* Ajuste proporcional usando vw */
     }
 
     p {
-      transform: translateX(10px);
+      transform: translateX(1vw); /* Ajuste proporcional usando vw */
     }
   }
 }

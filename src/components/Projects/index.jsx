@@ -130,7 +130,7 @@ export default function Projects() {
         moveItems(e.clientX, e.clientY);
       }}
       className={styles.projects}
-      id="work"
+      id="projects"
     >
       <h2>PROJECTS</h2>
       <div className={styles.body}>
@@ -175,7 +175,8 @@ export default function Projects() {
                       <Image
                         src={`/images/${src}`}
                         width={300}
-                        height={0}
+                        height={300}
+                        // fill
                         alt="image"
                       />
                     </div>
