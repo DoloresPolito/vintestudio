@@ -1,6 +1,6 @@
 .themeSwitcher {
   position: fixed;
-  top: 3vh; // Ajuste proporcional usando vh
+  top: 2vh; // Ajuste proporcional usando vh
   right: 2vw; // Ajuste proporcional usando vw
   // transform: translateX(-50%);
   display: flex;
@@ -18,9 +18,11 @@
     transition: background-color 0.3s, color 0.3s;
     font-size: 2vh;
 
+
     p{
       font-family: "Josefin Sans", sans-serif !important;
       margin: 0;
+      // transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
     }
    
 

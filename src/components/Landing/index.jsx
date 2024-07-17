@@ -7,7 +7,7 @@ import { ScrollTrigger } from "../../../node_modules/gsap/ScrollTrigger";
 import { slideUp } from "./animation";
 import { motion } from "framer-motion";
 import useMousePosition from "../../utils/useMousePosition";
-import NewHeader from "../NewHeader"
+import NewHeader from "../NewHeader";
 import Image from "next/image";
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
     gsap.set(firstText.current, { xPercent: xPercent });
     gsap.set(secondText.current, { xPercent: xPercent });
     requestAnimationFrame(animate);
-    xPercent += 0.1 * direction;
+    xPercent += 0.04 * direction;
   };
 
   const [isHovered, setIsHovered] = useState(false);
@@ -64,7 +64,6 @@ export default function Home() {
     };
   }, []);
 
-
   return (
     <motion.main
       variants={slideUp}
@@ -74,7 +73,7 @@ export default function Home() {
     >
       {/* <main className={styles.main}>
              
-        <NewHeader />
+
         <motion.div
           className={styles.mask}
           animate={{
@@ -103,13 +102,22 @@ export default function Home() {
           </p>
         </div>
       </main> */}
-     {/* <NewHeader /> */}
-      {/* <Image src={width > 800 ? "/images/background5.png" : "/images/background-mobile.png"} fill={true} alt="background" /> */}
-      <div className={styles.sliderContainer}>
 
-      <div ref={slider} className={styles.slider}>
-          <p ref={firstText}>  We are <span>crafters</span> of new generations websites.</p>
-          <p ref={secondText}>  We are <span>crafters</span> of new generations websites. </p>
+    
+      <div className={styles.sliderContainer}>
+        <h2>We are crafters</h2>
+        <div ref={slider} className={styles.slider}>
+          <p ref={firstText}>
+            {" "}
+            {/* We are <span>crafters</span>  */}
+            of new generations websites.
+          </p>
+
+          <p ref={secondText}>
+            {" "}
+            {/* We are <span>crafters</span>  */}
+            of new generations websites.{" "}
+          </p>
         </div>
       </div>
       <div data-scroll data-scroll-speed={0.1} className={styles.description}>
@@ -122,7 +130,7 @@ export default function Home() {
         >
           <path
             d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
-            fill="#ec4e39"
+ 
           />
         </svg>
         <p>Design & Development</p>

@@ -11,12 +11,29 @@
     
     .sliderContainer{
       position: absolute;
-      top: calc(100vh - 200px);
+      // top: calc(100vh - 200px);
+      top:22vh;
+   
+
+
+      h2{
+        font-family: "Montserrat", sans-serif;
+        font-size: 12vh;
+        letter-spacing: 0.1vw;
+        font-weight: 400;
+  margin-left: 1vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+
+
+      }
     }
     
     .slider{
       position: relative;
       white-space: nowrap;
+ 
+   
       // background-color: rgb(204, 204, 204);
     }
     
@@ -24,7 +41,7 @@
       position: relative;
       margin: 0px;
       // color: #4a4747;
-      font-size: 50px;
+      font-size: 50vh;
       font-weight: 400;
       padding-right: 50px;
       font-family: "Montserrat", sans-serif;
@@ -46,11 +63,14 @@
   
     .description{
       position: absolute;
-      top: 45%;
-      left: 65%;
+      top: 37vh;
+      left: 60vw;
       // color: #4a4747;
-      font-size: 24px;
+      font-size: 4vh;
       font-weight: 300;
+      max-width: 30vw;
+ 
+      // background-color: red;
       @media screen and (max-width: 800px) {
         top: 50%;
         left: 25%;
@@ -66,7 +86,11 @@
       }
       svg{
         transform: scale(2);
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+      }
+
+      path{
+        fill:var(--text);
       }
     }
   }
