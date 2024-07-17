@@ -33,7 +33,7 @@ export default function Index() {
         },
         exit: {
             d: targetPath,
-            transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3}
+            transition: {duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0}
         }
     }
 

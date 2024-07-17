@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
 import Landing from "../components/Landing";
@@ -11,7 +11,7 @@ import "./page.module.scss";
 import TopHeader from "../components/TopHeader";
 import CardsSection from "@/components/CardsSection";
 import Projects2 from "@/components/Projects2";
-
+import { useEffect, useState } from "react";
 import Layout from "../structure/ColorLayout";
 
 export default function Home() {
@@ -29,6 +29,16 @@ export default function Home() {
       }, 2000);
     })();
   }, []);
+
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setIsLoading(false);
+  //     document.body.style.cursor = 'default';
+  //     window.scrollTo(0, 0);
+  //   }, 2000);
+
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const [width, setWidth] = useState(null);
 
@@ -50,24 +60,20 @@ export default function Home() {
     <>
       <Layout>
         <AnimatePresence mode="wait">
-          {isLoading && <Preloader />}
+          {isLoading ? (
+            <Preloader key="preloader" />
+          ) : (
+            <div key="content">
+              <TopHeader />
+              <Landing />
+              <Description />
+              <CardsSection />
+              <Projects2 />
+              {width > 800 && <GridScroll />}
+              <Contact />
+            </div>
+          )}
         </AnimatePresence>
-        <TopHeader />
-        {/* <Landing /> */}
-        <Description />
-        <CardsSection />
-        <Projects2 />
-
-        {width > 800 ? (
-          <>
-            {" "}
-            <GridScroll />
-          </>
-        ) : (
-          <></>
-        )}
-
-        <Contact />
       </Layout>
     </>
   );

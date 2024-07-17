@@ -1,9 +1,9 @@
-import { useTheme } from '../../context/ThemeContext';
 import { useEffect } from 'react';
-import styles from "./style.module.scss"
+import styles from './style.module.scss'; 
+import { useTheme } from '../../context/ThemeContext'; 
 
-const Layout = ({ children }) => {
-  const { theme, toggleTheme } = useTheme();
+const ColorLayout = ({ children }) => {
+  const { theme, toggleTheme, fonts } = useTheme();
   const themes = ['theme-1', 'theme-2', 'theme-3'];
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default ColorLayout;
