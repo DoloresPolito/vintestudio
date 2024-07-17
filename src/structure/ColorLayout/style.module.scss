@@ -8,7 +8,7 @@
   z-index: 10000;
 
   button {
-    // padding: 1vh 2vw; // Ajuste proporcional usando vh y vw
+    padding: 1vh 2vw; // Ajuste proporcional usando vh y vw
     cursor: pointer;
     border: none;
     background-color: transparent;
@@ -17,6 +17,12 @@
     border: 1px solid var(--text);
     transition: background-color 0.3s, color 0.3s;
     font-size: 2vh;
+
+    p{
+      font-family: "Josefin Sans", sans-serif !important;
+      margin: 0;
+    }
+   
 
     &:hover {
       background-color: var(--text);

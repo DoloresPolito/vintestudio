@@ -47,7 +47,7 @@ export default function Index({setIsActive}) {
           <Body links={links} selectedLink={selectedLink} setSelectedLink={setSelectedLink} setIsActive={setIsActive} />
           <Footer />
         </div>
-        <Image src={links[selectedLink.index].src} isActive={selectedLink.isActive} alt="image"/>
+        {/* <Image src={links[selectedLink.index].src} isActive={selectedLink.isActive} alt="image"/> */}
       </div>
     </motion.div>
   )

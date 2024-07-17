@@ -1,28 +1,23 @@
 // body{
-//     background-color: rgba(134, 140, 125, 1);
+//     background-color: rgba(174, 140, 125, 1);
 //     color:rgba(241, 250, 228, 1)
 // }
-
 
 /* * 		--text-color: rgba(214, 235, 252, 1);
   --bg-color: rgba(42, 49, 39, 1); */
 
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
 body {
   background-color: var(--background);
   color: var(--text);
 }
 
-
-
 .theme-1 {
   --background: #{$theme-1-background};
   --text: #{$theme-1-text};
   --button-bg: #{$theme-1-button-bg};
   --button-text: #{$theme-1-button-text};
-  --nav-bg: #{$theme-1-nav-bg};
-  --nav-text: #{$theme-1-nav-text};
 }
 
 .theme-2 {
@@ -30,17 +25,13 @@ body {
   --text: #{$theme-2-text};
   --button-bg: #{$theme-2-button-bg};
   --button-text: #{$theme-2-button-text};
-  --nav-bg: #{$theme-2-nav-bg};
-  --nav-text: #{$theme-2-nav-text};
 }
 
 .theme-3 {
-  --background: #{$theme-4-background};
-  --text: #{$theme-4-text};
+  --background: #{$theme-3-background};
+  --text: #{$theme-3-text};
   --button-bg: #{$theme-3-button-bg};
   --button-text: #{$theme-3-button-text};
-  --nav-bg: #{$theme-3-nav-bg};
-  --nav-text: #{$theme-3-nav-text};
 }
 
 .theme-4 {
@@ -48,7 +39,46 @@ body {
   --text: #{$theme-4-text};
   --button-bg: #{$theme-2-button-bg};
   --button-text: #{$theme-2-button-text};
-  --nav-bg: #{$theme-4-nav-bg};
-  --nav-text: #{$theme-4-nav-text};
 }
+
+.theme-5 {
+  --background: #{$theme-5-background};
+  --text: #{$theme-5-text};
+}
+
+.theme-6 {
+  --background: #{$theme-6-background};
+  --text: #{$theme-6-text};
+}
+
+.theme-7 {
+  --background: #{$theme-7-background};
+  --text: #{$theme-7-text};
+}
+
+.theme-8 {
+  --background: #{$theme-8-background};
+  --text: #{$theme-8-text};
+}
+
+.theme-9 {
+  --background: #{$theme-9-background};
+  --text: #{$theme-9-text};
+}
+
+.theme-10 {
+  --background: #{$theme-10-background};
+  --text: #{$theme-10-text};
+}
+
+.theme-11 {
+  --background: #{$theme-11-background};
+  --text: #{$theme-11-text};
+}
+
+.theme-12 {
+  --background: #{$theme-12-background};
+  --text: #{$theme-12-text};
+}
+
 
