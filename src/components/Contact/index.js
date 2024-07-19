@@ -1,16 +1,8 @@
 import styles from "./style.module.scss";
-// import { useRef, useState, useEffect } from "react";
-// import { useScroll, useTransform } from "framer-motion";
+
 import MovingTitle from "../MovingTitle";
 
 export default function Index() {
-  // const container = useRef(null);
-  // const { scrollYProgress } = useScroll({
-  //   target: container,
-  //   offset: ["start end", "end end"],
-  // });
-  // const x = useTransform(scrollYProgress, [0, 1], [0, 100]);
-  // const y = useTransform(scrollYProgress, [0, 1], [-500, 0]);
 
   return (
     <>
@@ -28,6 +20,7 @@ export default function Index() {
           </div>
           <div className={styles.right}>{/* <p>contact form</p> */}</div>
         </div>
+
 
         <div className={styles.line}></div>
       </div>
