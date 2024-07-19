@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from '../Magnetic';
 
-export default function Index({children, backgroundColor="#eb612b", ...attributes}) {
+export default function Index({children, backgroundColor="var(--text)", ...attributes}) {
 
 
 
@@ -31,7 +31,7 @@ export default function Index({children, backgroundColor="#eb612b", ...attribute
 
   return (
     <Magnetic>
-      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
+      <div className={styles.roundedButton} style={{overflow: "hidden",  color:"var(--text)"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}>
           {
             children
           }

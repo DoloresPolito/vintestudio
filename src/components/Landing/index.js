@@ -3,7 +3,7 @@ import styles from "./style.module.scss";
 import { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 import gsap from "gsap";
-import { ScrollTrigger } from "../../../node_modules/gsap/ScrollTrigger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { slideUp } from "./animation";
 import { motion } from "framer-motion";
 import useMousePosition from "../../utils/useMousePosition";
@@ -17,21 +17,6 @@ export default function Home() {
   let xPercent = 0;
   let direction = -1;
 
-  useLayoutEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.to(slider.current, {
-      scrollTrigger: {
-        trigger: document.documentElement,
-        scrub: 0.25,
-        start: 0,
-        end: window.innerHeight,
-        onUpdate: (e) => (direction = e.direction * -1),
-      },
-      x: "-500px",
-    });
-    requestAnimationFrame(animate);
-  }, []);
-
   const animate = () => {
     if (xPercent < -100) {
       xPercent = 0;
@@ -44,24 +29,17 @@ export default function Home() {
     xPercent += 0.04 * direction;
   };
 
-  const [isHovered, setIsHovered] = useState(false);
-  const { x, y } = useMousePosition();
-  const size = isHovered ? 400 : 40;
+  
 
-  const [width, setWidth] = useState(null);
+  useLayoutEffect(() => {
+    const textElement = slider.current;
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    gsap.to(textElement, {
+      x: "-100%",
+      duration: 25, // Adjust this value to control the speed
+      repeat: -1, // Repeat indefinitely
+      ease: "linear", // Ensures constant speed
+    });
   }, []);
 
   return (
@@ -103,7 +81,6 @@ export default function Home() {
         </div>
       </main> */}
 
-    
       <div className={styles.sliderContainer}>
         <h2>We are crafters</h2>
         <div ref={slider} className={styles.slider}>
@@ -128,10 +105,7 @@ export default function Home() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <path
-            d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
- 
-          />
+          <path d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z" />
         </svg>
         <p>Design & Development</p>
       </div>

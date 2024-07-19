@@ -23,9 +23,11 @@
     }
 
     &:hover{
-        border: 1px solid #eb612b;
+      
+    
         p{
             color: white;
+            color:var(--background);
         }
     }
 }

@@ -13,6 +13,7 @@ import CardsSection from "@/components/CardsSection";
 import Projects from "@/components/Projects";
 import { useEffect, useState } from "react";
 import Layout from "../structure/ColorLayout";
+import Cursor from "../components/Cursor";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,11 +60,13 @@ export default function Home() {
   return (
     <>
       <Layout>
+        <Cursor/>
         <AnimatePresence mode="wait">
           {isLoading ? (
             <Preloader key="preloader" />
           ) : (
             <div key="content">
+      
               <TopHeader />
               <Landing />
               <Description />

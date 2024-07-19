@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    // height: 100vh;
+  }
+  
+  .circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--text);
+    border-radius: 50%;
+    // mix-blend-mode: difference;
+    pointer-events: none;
+    transition: height 0.3s ease-out, width 0.3s ease-out, filter 0.3s ease-out;
+    z-index: 10000;
+  
+    &.active {
+      width: 200px;
+      height: 200px;
+      filter: blur(30px);
+      background-color: #87e3f1 !important;
+
+    }
+  
+    &:not(.active) {
+      width: 10px;
+      height: 10px;
+      filter: blur(0px);
+    }
+  }

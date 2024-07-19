@@ -3,6 +3,7 @@ import { useInView, motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import { slideUp} from "./animation";
 import Rounded from "../../common/RoundedButton";
+import MovingTitle from "../MovingTitle";
 
 export default function Index() {
   const [width, setWidth] = useState(null);
@@ -23,13 +24,16 @@ export default function Index() {
   const medium = 1200;
 
   const phrase =
-    "Vinte is a professional website design and development studio based in Argentina. We create human experience in a digital world; using the best practices and latest web standards guidelines. The results are digital experiences lovingly hand coded by combining business strategy, identity, UX/UI, and content.";
+    "Vinte is a professional website design and development studio based in Argentina. We create human experience in a digital world; using the best practices and latest web standards guidelines.";
   const description = useRef(null);
   const isInView = useInView(description);
   return (
     <>
+       {/* <MovingTitle title="ABOUT" /> */}
       <div ref={description} className={styles.description} id="description">
+   
         <div className={styles.body}>
+          <div className={styles.left}>
           <p>
             {phrase.split(" ").map((word, index) => {
               return (
@@ -46,8 +50,16 @@ export default function Index() {
               );
             })}
           </p>
+          </div>
 
-          {width > 1000 ? (
+          <div className={styles.right}>
+
+
+            <p> The results are digital experiences lovingly hand coded by combining business strategy, identity, UX/UI, and content.</p>
+          </div>
+        
+
+          {/* {width > 1000 ? (
             <>
               <div data-scroll data-scroll-speed={0.1}>
                 <Rounded className={styles.button}>
@@ -57,7 +69,7 @@ export default function Index() {
             </>
           ) : (
             <></>
-          )}
+          )} */}
         </div>
       </div>
 

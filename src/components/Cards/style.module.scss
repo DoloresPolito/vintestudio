@@ -1,5 +1,5 @@
 .cardContainer {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@
     flex-direction: column;
     position: relative;
     top: -5vh; // Ajuste proporcional usando vh
-    height: 70vh; // Ajuste proporcional usando vh
+    height: 50vh; // Ajuste proporcional usando vh
     width: 80vw; // Ajuste proporcional usando vw
     border-radius: 2.5vw; // Ajuste proporcional usando vw
     padding: 4vw; // Ajuste proporcional usando vw

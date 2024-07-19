@@ -4,6 +4,7 @@ import { projects } from "../../data";
 import Card from "../Cards";
 import { useScroll } from "framer-motion";
 import { useRef } from "react";
+import MovingTitle from "../MovingTitle";
 
 export default function CardsSection() {
   const container = useRef(null);
@@ -13,7 +14,10 @@ export default function CardsSection() {
   });
 
   return (
+    <>
+  
     <main ref={container} className={styles.main} id="work">
+    <MovingTitle title="WORK PROGRESS"/>
       {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.02;
         return (
@@ -28,5 +32,6 @@ export default function CardsSection() {
         );
       })}
     </main>
+    </>
   );
 }

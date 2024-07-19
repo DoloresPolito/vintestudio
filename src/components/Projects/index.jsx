@@ -5,7 +5,8 @@ import Project from "./components/project";
 import { motion } from "framer-motion";
 import gsap from "gsap";
 import Image from "next/image";
-import Rounded from "../../common/RoundedButton";
+import MovingTitle from "../MovingTitle";
+
 
 const projects = [
   {
@@ -45,8 +46,8 @@ const scaleAnimation = {
   },
   closed: {
     scale: 0,
-    x: "-50%",
-    y: "-50%",
+    x: "-100%",
+    y: "-100%",
     transition: { duration: 0.4, ease: [0.32, 0, 0.67, 0] },
   },
 };
@@ -125,6 +126,9 @@ export default function Projects() {
   };
 
   return (
+    <>
+  
+  <MovingTitle title="PROJECTS"/>
     <main
       onMouseMove={(e) => {
         moveItems(e.clientX, e.clientY);
@@ -132,7 +136,8 @@ export default function Projects() {
       className={styles.projects}
       id="projects"
     >
-      <h2>PROJECTS</h2>
+      
+      {/* <h2>PROJECTS</h2> */}
       <div className={styles.body}>
         {projects.map((project, index) => {
           return (
@@ -146,9 +151,7 @@ export default function Projects() {
           );
         })}
       </div>
-      {/* <Rounded>
-        <p>More work</p>
-      </Rounded> */}
+
 
       {width > 800 ? (
         <>
@@ -206,5 +209,6 @@ export default function Projects() {
         <></>
       )}
     </main>
+    </>
   );
 }
