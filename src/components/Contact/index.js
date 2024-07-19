@@ -1,9 +1,6 @@
 import styles from "./style.module.scss";
-import Rounded from "../../common/RoundedButton";
 import { useRef, useState, useEffect } from "react";
-import { useScroll, motion, useTransform } from "framer-motion";
-import Link from "next/link";
-import styled from "styled-components";
+import { useScroll, useTransform } from "framer-motion";
 import MovingTitle from "../MovingTitle";
 
 export default function Index() {
@@ -57,6 +54,3 @@ export default function Index() {
   );
 }
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
