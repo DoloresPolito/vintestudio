@@ -72,7 +72,10 @@ export default function Home() {
               <Description />
               <CardsSection />
               <Projects />
-              {width > 800 && <GridScroll />}
+              {/* {width > 800 &&
+            
+               } */}
+                  <GridScroll />
               <Contact />
             </div>
           )}
