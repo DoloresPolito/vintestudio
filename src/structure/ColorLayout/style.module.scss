@@ -1,11 +1,14 @@
 .themeSwitcher {
   position: fixed;
-  top: 2vh; // Ajuste proporcional usando vh
-  right: 2vw; // Ajuste proporcional usando vw
+  top: 2vh; 
+  right: 2vw; 
   // transform: translateX(-50%);
   display: flex;
-  gap: 1vw; // Ajuste proporcional usando vw
+  gap: 1vw; 
   z-index: 10000;
+  @media only screen and (max-width: 600px) {
+    top: 3vh; 
+  }
 
   button {
     padding: 1vh 2vw; // Ajuste proporcional usando vh y vw
@@ -18,11 +21,21 @@
     transition: background-color 0.3s, color 0.3s;
     font-size: 2vh;
 
+    @media only screen and (max-width: 600px) {
+      padding: 0.5vh 1vw; 
+    }
+
 
     p{
       font-family: "Josefin Sans", sans-serif !important;
       margin: 0;
       // transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      @media only screen and (max-width: 1000px) {
+        font-size: 2vh;
+      }
+      @media only screen and (max-width: 600px) {
+        font-size: 1.5vh;
+      }
     }
    
 
