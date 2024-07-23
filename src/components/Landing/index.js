@@ -3,13 +3,9 @@ import styles from "./style.module.scss";
 import { useRef, useLayoutEffect, useState, useEffect } from "react";
 
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { slideUp } from "./animation";
 import { motion } from "framer-motion";
-import useMousePosition from "../../utils/useMousePosition";
-import NewHeader from "../NewHeader";
-import Image from "next/image";
-
+import AnimatedButton from "../AnimatedButton";
 export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
@@ -29,8 +25,6 @@ export default function Home() {
     xPercent += 0.04 * direction;
   };
 
-  
-
   useLayoutEffect(() => {
     const textElement = slider.current;
 
@@ -43,46 +37,14 @@ export default function Home() {
   }, []);
 
   return (
-    <motion.main
-      variants={slideUp}
-      initial="initial"
-      animate="enter"
-      className={styles.landing}
-    >
-      {/* <main className={styles.main}>
-             
-
-        <motion.div
-          className={styles.mask}
-          animate={{
-            WebkitMaskPosition: `${x - size / 2}px ${y - size / 2}px`,
-            WebkitMaskSize: `${size}px`,
-          }}
-          transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
-        >
-          <p
-            onMouseEnter={() => {
-              setIsHovered(true);
-            }}
-            onMouseLeave={() => {
-              setIsHovered(false);
-            }}
-          >
-       We use the latest technologies and create incredible responsive websites, adapted to any size of screen. 
-          </p>
+    <motion.main className={styles.landing}>
+      <div className={styles.sliderContainer}>
+        <motion.div variants={slideUp} initial="initial" animate="enter">
+          <h2>We are crafters</h2>
         </motion.div>
 
-        <div className={styles.body}>
-          <p>
-
-          We are <span>crafters</span> of new generations websites.
-     
-          </p>
-        </div>
-      </main> */}
-
-      <div className={styles.sliderContainer}>
-        <h2>We are crafters</h2>
+        {/* <AnimatedButton>Hover over me</AnimatedButton> */}
+        <AnimatedButton initialText="Hover over me" hoverText="Hovered!" />
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>
             {" "}

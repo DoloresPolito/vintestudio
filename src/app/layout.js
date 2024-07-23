@@ -1,35 +1,46 @@
-import { Fira_Sans, Josefin_Sans } from "next/font/google";
-import { ThemeProvider, useTheme } from "../context/Themecontext";
+import { Roboto, Michroma } from "@next/font/google";
+import { ThemeProvider } from "../context/Themecontext";
 import "./globals.scss";
 
-// const fira = Fira_Sans({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "500", "600", "700"],
-//   variable: "--font-fira",
-// });
-const josefina = Josefin_Sans({
+const michroma = Michroma({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-jose",
+  weight: ["400"],
+  variable: "--font-michroma",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "700"],
+  variable: "--font-roboto",
 });
 
 export const metadata = {
   title: "VINTE STUDIO",
   description: "Web development",
 };
-export default function RootLayout({ children }) {
-  // <meta
-  //   name="viewport"
-  //   content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-  // ></meta>;
 
+export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html>
+      <head>
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Michroma&display=swap"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
       <ThemeProvider>
-        <body className={`${josefina.variable} font-sans`}>{children}</body>
+        <body className={`${michroma.variable} ${roboto.variable}`}>{children}</body>
       </ThemeProvider>
     </html>
-
-
   );
 }

@@ -12,13 +12,20 @@
     position: relative;
     top: -5vh; // Ajuste proporcional usando vh
     height: 50vh; // Ajuste proporcional usando vh
-    width: 80vw; // Ajuste proporcional usando vw
+    width: 40vw; // Ajuste proporcional usando vw
     border-radius: 2.5vw; // Ajuste proporcional usando vw
     padding: 4vw; // Ajuste proporcional usando vw
     margin-top: 17vh; // Ajuste proporcional usando vh
     transform-origin: top;
     border: 1px solid;
     background-color: var(--background);
+
+    @media only screen and (max-width: 1000px) {
+      width: 70vw; 
+    }
+    @media only screen and (max-width: 600px) {
+      width: 80vw; 
+    }
 
     .iconcontainer {
       height: 5vh; // Ajuste proporcional usando vh
@@ -32,6 +39,8 @@
       align-items: center;
       border: 1px solid var(--text);
 
+
+
       img {
         height: 2vh; // Ajuste proporcional usando vh
         width: 2vh; // Ajuste proporcional usando vh
@@ -44,46 +53,23 @@
       font-weight: 600;
       margin-top: 2vh; // Ajuste proporcional usando vh
       text-transform: uppercase;
-      font-family: "Josefin Sans", sans-serif;
+      font-family: "Michroma", sans-serif;
     }
 
     .body {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       height: 100%;
       margin-top: 5vh; // Ajuste proporcional usando vh
       gap: 5vw; // Ajuste proporcional usando vw
 
-      .description {
-        width: 40%;
-        position: relative;
-        top: 10%;
-        
-        p {
-          font-size: 1.8vw; // Ajuste proporcional usando vw
-          font-weight: 300;
-          margin-top: 5vh; // Ajuste proporcional usando vh
-          letter-spacing: 0.5px;
-          line-height: 120%;
-          font-family: "Josefin Sans", sans-serif;
-
-          &::first-letter {
-            font-size: 2.8vw; // Ajuste proporcional usando vw
-          }
-        }
-
-        span {
-          display: flex;
-          align-items: center;
-          gap: 0.5vw; // Ajuste proporcional usando vw
-          
-          a {
-            font-size: 1.2vw; // Ajuste proporcional usando vw
-            text-decoration: underline;
-            cursor: pointer;
-          }
-        }
+     
+      p{
+        font-family: "Roboto";
+        font-size: 2.5vh;
+        text-align: center;
       }
-
       .imageContainer {
         position: relative;
         width: 60%;

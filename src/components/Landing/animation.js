@@ -1,9 +1,11 @@
 export const slideUp = {
     initial: {
-        y: 300
+        y: 300,
+        x:-100
     },
     enter: {
         y: 0,
-        transition: {duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 2.5}
+        x:0,
+        transition: {duration: 0.6, ease: [0.33, 1, 0.68, 1], delay: 0.2}
     }
 }

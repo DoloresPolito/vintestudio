@@ -27,7 +27,7 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 2000);
+      }, 500);
     })();
   }, []);
 
@@ -68,7 +68,7 @@ export default function Home() {
             <div key="content">
       
               <TopHeader />
-              <Landing />
+              {/* <Landing /> */}
               <Description />
               <CardsSection />
               <Projects />

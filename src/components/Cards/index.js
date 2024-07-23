@@ -42,7 +42,7 @@ const Card = ({
         </div>
     
         <div className={styles.body}>
-          <div className={styles.description}>
+          {/* <div className={styles.description}> */}
           <h2>{title}</h2>
             <p>{description}</p>
             {/* <span>
@@ -64,12 +64,12 @@ const Card = ({
             </span> */}
           </div>
 
-          <div className={styles.imageContainer}>
+          {/* <div className={styles.imageContainer}>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>
               <Image fill src={`/images/process/${image}`} alt="image" />
             </motion.div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </motion.div>
     </div>
   );

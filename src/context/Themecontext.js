@@ -12,19 +12,21 @@ export const ThemeProvider = ({ children }) => {
     setTheme(themeName);
   };
 
-  const fonts = {
-    fira: {
-      fontFamily: 'Fira Sans, sans-serif',
-      variable: '--font-fira',
-    },
-    josefin: {
-      fontFamily: 'Josefin Sans, sans-serif',
-      variable: '--font-jose',
-    },
-  };
+  // const fonts = {
+  //   fira: {
+  //     fontFamily: 'Fira Sans, sans-serif',
+  //     variable: '--font-fira',
+  //   },
+  //   josefin: {
+  //     fontFamily: 'Josefin Sans, sans-serif',
+  //     variable: '--font-jose',
+  //   },
+  // };
 
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme, fonts }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme
+    // , fonts 
+    }}>
       {children}
     </ThemeContext.Provider>
   );
