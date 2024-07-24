@@ -61,11 +61,15 @@
 
 
     p {
-      font-size: 1vw;
+      font-size: 2vh;
       font-weight: 300;
-      margin-left: 1vw;
+      margin-left: 1vh;
       letter-spacing: 0.5px;
       font-family: "Michroma", sans-serif;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.5vh;
+      }
     }
   }
 }

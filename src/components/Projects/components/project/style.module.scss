@@ -3,15 +3,18 @@
   width: 50vw; /* Ajuste proporcional usando vw */
   justify-content: space-between;
   align-items: center;
-
   padding: 3vh 5vw; /* Ajuste proporcional usando vh y vw */
   border-top: 1px solid var(--text);
   cursor: pointer;
   transition: all 0.2s;
   overflow-x: hidden;
-margin-left: 1vw;
+  margin-left: 1vw;
 
-
+  @media only screen and (max-width: 1000px) {
+    width: 80vw;
+    margin-left: 0vw;
+    padding: 1vh 3vw;
+  }
 
   .worktitle {
     font-size: 3vw; /* Ajuste proporcional usando vw */
@@ -20,8 +23,6 @@ margin-left: 1vw;
     transition: all 0.4s;
     font-family: "Josefin Sans", sans-serif !important;
     color: var(--text);
-
-
   }
 
   p {
@@ -30,6 +31,10 @@ margin-left: 1vw;
     font-family: "Montserrat", sans-serif !important;
     text-decoration: none;
     color: var(--text);
+
+    @media only screen and (max-width: 1000px) {
+
+    }
   }
 
   &:last-of-type {

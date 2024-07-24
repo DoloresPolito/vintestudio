@@ -60,7 +60,8 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <Cursor/>
+        {width > 600 ?      <Cursor/> : <></>}
+   
         <AnimatePresence mode="wait">
           {isLoading ? (
             <Preloader key="preloader" />
@@ -72,10 +73,10 @@ export default function Home() {
               <Description />
               <CardsSection />
               <Projects />
-              {/* {width > 800 &&
-            
-               } */}
-                  <GridScroll />
+              {width > 800 &&
+                <GridScroll />
+               }
+              
               <Contact />
             </div>
           )}
