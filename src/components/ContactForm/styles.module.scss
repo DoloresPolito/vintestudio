@@ -1,0 +1,87 @@
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end !important;
+  justify-content: flex-end;
+  width: 40vw;
+  height: auto;
+
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+  }
+}
+
+.inputcontainer,
+.inputcontainertextarea {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%; 
+  margin: 2vh 0;
+  @media only screen and (max-width: 600px) {
+    width: 100%; 
+  }
+}
+
+.input {
+  height: 3vh;
+  width: 100%; 
+  border: none;
+  padding-right: 1vw; 
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  border-bottom: 1px solid var(--background);
+  background-color: var(--text);
+  outline: none; 
+  color:var(--background);
+
+  &::placeholder {
+    color:var(--background);
+    text-align: right; 
+  }
+}
+
+.textarea {
+  height: 10vh;
+  width: 100%;
+  padding-right: 1vw; 
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2vh;
+  font-weight: 300;
+  outline: none;   color:var(--background);
+
+  &::placeholder {
+    color:var(--background);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: right; 
+  }
+}
+
+.buttoncontainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  height: 6vh;
+  width: auto;
+  border-bottom: 1px solid var(--background);
+  background-color: var(--text);
+  outline: none;
+  border: none;
+  color: var(--background);
+  cursor: pointer;
+  font-size: 2vh;
+  font-weight: 300;
+}
+
+
+

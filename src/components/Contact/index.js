@@ -1,22 +1,52 @@
 import styles from "./style.module.scss";
 import MovingTitle from "../MovingTitle";
+import Contact from "../ContactForm";
 
 export default function Index() {
   return (
     <>
       <div className={styles.section}>
-        <MovingTitle title="CONTACT" svgColor="background"/>
+        <MovingTitle title="CONTACT" svgColor="background" />
 
         <h2>LET&apos;S WORK TOGHETER</h2>
 
         <div className={styles.contentcontainer}>
           <div className={styles.left}>
-            <p>vintestudio@gmai.com</p>
-            <p>+54 3446 584076</p>
-            <p>Linkedin</p>
-            <p></p>
+            <svg
+              width="5vh"
+              // height=""
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.8329 30.0003L24.7616 20.0003M15.2378 20.0003L4.1664 30.0003M3.33301 11.667L16.9412 21.1927C18.0432 21.9641 18.5941 22.3498 19.1934 22.4992C19.7228 22.6311 20.2765 22.6311 20.8059 22.4992C21.4052 22.3498 21.9562 21.9641 23.0581 21.1927L36.6663 11.667M11.333 33.3337H28.6663C31.4666 33.3337 32.8667 33.3337 33.9363 32.7887C34.8771 32.3093 35.642 31.5444 36.1214 30.6036C36.6663 29.5341 36.6663 28.1339 36.6663 25.3337V14.667C36.6663 11.8667 36.6663 10.4666 36.1214 9.39704C35.642 8.45623 34.8771 7.69133 33.9363 7.21196C32.8667 6.66699 31.4666 6.66699 28.6663 6.66699H11.333C8.53275 6.66699 7.13261 6.66699 6.06306 7.21196C5.12224 7.69133 4.35734 8.45623 3.87798 9.39704C3.33301 10.4666 3.33301 11.8667 3.33301 14.667V25.3337C3.33301 28.1339 3.33301 29.5341 3.87798 30.6036C4.35734 31.5444 5.12224 32.3093 6.06306 32.7887C7.13261 33.3337 8.53275 33.3337 11.333 33.3337Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <svg
+               width="5vh"
+              // height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.833 19.1667L19.1664 22.5L26.6664 15M20.833 33.3333C28.6571 33.3333 34.9997 26.9907 34.9997 19.1667C34.9997 11.3426 28.6571 5 20.833 5C13.009 5 6.66637 11.3426 6.66637 19.1667C6.66637 20.75 6.92611 22.2726 7.40532 23.6944C7.58565 24.2294 7.67582 24.4969 7.69208 24.7024C7.70814 24.9053 7.696 25.0476 7.64579 25.2449C7.59495 25.4447 7.48269 25.6525 7.25819 26.068L4.53209 31.1139C4.14324 31.8337 3.94882 32.1935 3.99233 32.4713C4.03023 32.7132 4.17261 32.9262 4.38166 33.0537C4.62166 33.2001 5.02853 33.1581 5.84227 33.074L14.3773 32.1917C14.6358 32.165 14.765 32.1516 14.8828 32.1561C14.9987 32.1605 15.0804 32.1714 15.1934 32.1975C15.3083 32.2239 15.4527 32.2796 15.7416 32.3909C17.3217 32.9996 19.0384 33.3333 20.833 33.3333Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
           </div>
-          <div className={styles.right}>{/* <p>contact form</p> */}</div>
+          <div className={styles.right}>
+            <Contact />
+          </div>
         </div>
 
         <div className={styles.footer}>
@@ -60,7 +90,7 @@ export default function Index() {
               ></path>
             </g>
           </svg>
-          <p>All rights reserved</p>
+          <p>©2024 | All rights reserved</p>
         </div>
         <div className={styles.line}></div>
       </div>
