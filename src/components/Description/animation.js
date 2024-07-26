@@ -1,13 +1,13 @@
 export const slideUp = {
     initial: {
-        y: "100%"
+        y: "10%"
     },
     open: (i) => ({
         y: "0%",
-        transition: {duration: 0.5, delay: 0.01 * i}
+        transition: {duration: 0.5, delay: 0.1 * i}
     }),
     closed: {
-        y: "100%",
+        y: "50%",
         transition: {duration: 0.5}
     }
 }

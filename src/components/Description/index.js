@@ -1,9 +1,8 @@
 import styles from "./style.module.scss";
 import { useInView, motion } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
-import { slideUp} from "./animation";
-import Rounded from "../../common/RoundedButton";
-import MovingTitle from "../MovingTitle";
+import { slideUp } from "./animation";
+
 
 export default function Index() {
   const [width, setWidth] = useState(null);
@@ -21,58 +20,52 @@ export default function Index() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const medium = 1200;
 
   const phrase =
     "Vinte is a professional website design and development studio based in Argentina. We create human experience in a digital world; using the best practices and latest web standards guidelines.";
   const description = useRef(null);
   const isInView = useInView(description);
+
+
   return (
     <>
-       {/* <MovingTitle title="ABOUT" /> */}
-      <div ref={description} className={styles.description} id="description">
    
+      <div ref={description} className={styles.description} id="description">
         <div className={styles.body}>
           <div className={styles.left}>
-          <p>
-            {phrase.split(" ").map((word, index) => {
-              return (
-                <span key={index} className={styles.mask}>
-                  <motion.span
-                    variants={slideUp}
-                    custom={index}
-                    animate={isInView ? "open" : "closed"}
-                    key={index}
-                  >
-                    {word}
-                  </motion.span>
-                </span>
-              );
-            })}
-          </p>
+            <h2>WHO WE ARE</h2>
+
+               <p>
+              {" "}
+              The results are digital experiences lovingly hand coded by
+              combining business strategy, identity, UX/UI, and content.
+            </p>
           </div>
 
           <div className={styles.right}>
+         
 
-
-            <p> The results are digital experiences lovingly hand coded by combining business strategy, identity, UX/UI, and content.</p>
+            <p>
+              {phrase.split(" ").map((word, index) => {
+                return (
+                  <span key={index} className={styles.mask}>
+                    <motion.span
+                      variants={slideUp}
+                      custom={index}
+                      animate={isInView ? "open" : "closed"}
+                      key={index}
+                    >
+                      {word}
+                    </motion.span>
+                  </span>
+                );
+              })}
+            </p>
           </div>
-        
 
-          {/* {width > 1000 ? (
-            <>
-              <div data-scroll data-scroll-speed={0.1}>
-                <Rounded className={styles.button}>
-                  <p>Know us better</p>
-                </Rounded>
-              </div>
-            </>
-          ) : (
-            <></>
-          )} */}
+       
         </div>
       </div>
-
     </>
   );
 }

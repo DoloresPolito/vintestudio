@@ -66,10 +66,11 @@ export default function Home() {
           {isLoading ? (
             <Preloader key="preloader" />
           ) : (
+            
             <div key="content">
       
               <TopHeader />
-              {/* <Landing /> */}
+              <Landing />
               <Description />
               <CardsSection />
               <Projects />
@@ -79,7 +80,7 @@ export default function Home() {
               
               <Contact />
             </div>
-          )}
+           )}
         </AnimatePresence>
       </Layout>
     </>

@@ -5,7 +5,7 @@ import Contact from "../ContactForm";
 export default function Index() {
   return (
     <>
-      <div className={styles.section}>
+      <div className={styles.section} id="contact">
         <MovingTitle title="CONTACT" svgColor="background" />
 
         <h2>LET&apos;S WORK TOGHETER</h2>
@@ -92,7 +92,7 @@ export default function Index() {
           </svg>
           <p>©2024 | All rights reserved</p>
         </div>
-        <div className={styles.line}></div>
+        {/* <div className={styles.line}></div> */}
       </div>
     </>
   );

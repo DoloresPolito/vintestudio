@@ -44,7 +44,7 @@ export default function Home() {
         </motion.div>
 
         {/* <AnimatedButton>Hover over me</AnimatedButton> */}
-        <AnimatedButton initialText="Hover over me" hoverText="Hovered!" />
+        {/* <AnimatedButton initialText="Hover over me" hoverText="Hovered!" /> */}
         <div ref={slider} className={styles.slider}>
           <p ref={firstText}>
             {" "}
