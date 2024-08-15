@@ -1,6 +1,7 @@
 import { Roboto, Michroma } from "@next/font/google";
 import { ThemeProvider } from "../context/Themecontext";
 import "./globals.scss";
+import '../styles/fonts.css'
 
 const michroma = Michroma({
   subsets: ["latin"],

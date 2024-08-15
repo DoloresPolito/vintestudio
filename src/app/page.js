@@ -2,7 +2,7 @@
 
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/Preloader";
-import Landing from "../components/Landing";
+import LandingV2 from "../components/LandingV2";
 import Description from "../components/Description";
 // import SlidingImages from "../components/SlidingImages";
 import Contact from "../components/Contact";
@@ -10,7 +10,7 @@ import GridScroll from "../components/GridScroll";
 import "./page.module.scss";
 import TopHeader from "../components/TopHeader";
 import CardsSection from "@/components/CardsSection";
-import Projects from "@/components/Projects";
+import ProjectsV2 from "@/components/ProjectsV2";
 import { useEffect, useState } from "react";
 import Layout from "../structure/ColorLayout";
 import Cursor from "../components/Cursor";
@@ -70,10 +70,10 @@ export default function Home() {
             <div key="content">
       
               <TopHeader />
-              <Landing />
+              <LandingV2 />
               <Description />
               <CardsSection />
-              <Projects />
+              <ProjectsV2/>
               {width > 800 &&
                 <GridScroll />
                }

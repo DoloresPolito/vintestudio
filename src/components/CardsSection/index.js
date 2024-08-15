@@ -5,7 +5,7 @@ import Card from "../Cards";
 import { useScroll } from "framer-motion";
 import { useRef } from "react";
 import MovingTitle from "../MovingTitle";
-
+import WorkProgressV2 from "../../components/WorkProgressV2";
 export default function CardsSection() {
   const container = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -18,7 +18,9 @@ export default function CardsSection() {
   
     <main ref={container} className={styles.main} id="work">
     <MovingTitle title="WORK PROGRESS"/>
-      {projects.map((project, i) => {
+
+<WorkProgressV2/>
+      {/* {projects.map((project, i) => {
         const targetScale = 1 - (projects.length - i) * 0.02;
         return (
           <Card
@@ -30,7 +32,7 @@ export default function CardsSection() {
             targetScale={targetScale}
           />
         );
-      })}
+      })} */}
     </main>
     </>
   );

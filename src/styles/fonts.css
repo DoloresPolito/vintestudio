@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'TalismanBoldItalic';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Bold-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  @font-face {
+    font-family: 'TalismanCompactRegular';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Compact-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
+  @font-face {
+    font-family: 'TalismanLight';
+    src: url('/fonts/Talisman/OTF/PPTalisman-Light.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'OverusedGrotesk-Light';
+    src: url('/fonts/overused-grotesk/OverusedGrotesk-Light-BF64eeac17cade6.otf.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }

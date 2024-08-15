@@ -16,12 +16,27 @@
 
     h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: 12vh;
-      letter-spacing: 0.1vw;
-      font-weight: 400;
+      // font-size: 12vh;
+      // letter-spacing: 0.1vw;
+      font-weight: 300;
       margin-left: 1vw;
       margin-top: 1vw;
       margin-bottom: 1vw;
+      font-family: 'OverusedGrotesk-Light', sans-serif;
+      color:red !important;
+      font-size: 20px !important;
+      max-width: 800px;
+    }
+
+    h3{
+      margin-left: 1vw;
+      margin-top: 1vw;
+      margin-bottom: 1vw;
+      font-family: 'OverusedGrotesk-Light', sans-serif;
+      color:red !important;
+      font-size: 16px !important;
+      max-width: 400px;
+      font-weight: 300;
     }
   }
 

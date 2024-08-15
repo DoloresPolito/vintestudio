@@ -32,7 +32,7 @@ export default function MovingTitle({ title, svgColor }) {
     mm.add("(min-width: 1001px)", () => {
       gsap.to(textElement, {
         x: "-100%",
-        duration: 13, // Default speed for larger screens
+        duration: 23, // Default speed for larger screens
         repeat: -1,
         ease: "linear",
       });

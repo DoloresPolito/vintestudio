@@ -35,11 +35,13 @@ export default function Index() {
           <div className={styles.left}>
             <h2>WHO WE ARE</h2>
 
-               <p>
+
+
+               {/* <p>
               {" "}
               The results are digital experiences lovingly hand coded by
               combining business strategy, identity, UX/UI, and content.
-            </p>
+            </p> */}
           </div>
 
           <div className={styles.right}>

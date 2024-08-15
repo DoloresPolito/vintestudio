@@ -4,6 +4,8 @@ import styles from "./style.module.scss";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 
+import AnimatedDiv from "../AnimatedDiv";
+
 const Card = ({
   i,
   title,
@@ -41,6 +43,7 @@ const Card = ({
           <p>{id}</p>
         </div>
     
+    <AnimatedDiv delay="200">
         <div className={styles.body}>
           {/* <div className={styles.description}> */}
           <h2>{title}</h2>
@@ -62,7 +65,7 @@ const Card = ({
                 />
               </svg>
             </span> */}
-          </div>
+          </div></AnimatedDiv>
 
           {/* <div className={styles.imageContainer}>
             <motion.div className={styles.inner} style={{ scale: imageScale }}>

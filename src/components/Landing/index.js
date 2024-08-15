@@ -1,11 +1,15 @@
 "use client";
 import styles from "./style.module.scss";
 import { useRef, useLayoutEffect, useState, useEffect } from "react";
-
+import { motion } from "framer-motion";
 import gsap from "gsap";
 import { slideUp } from "./animation";
-import { motion } from "framer-motion";
+
 import AnimatedButton from "../AnimatedButton";
+
+import svgvideo from "../../../public/svgvideo.svg";
+import Image from "next/image";
+
 export default function Home() {
   const firstText = useRef(null);
   const secondText = useRef(null);
@@ -40,9 +44,18 @@ export default function Home() {
     <motion.main className={styles.landing}>
       <div className={styles.sliderContainer}>
         <motion.div variants={slideUp} initial="initial" animate="enter">
-          <h2>We are crafters</h2>
+          <h2>
+            Explore our portfolio to gain insights into our diverse projects,
+            drawing inspiration for your own architectural aspirations.
+          </h2>
         </motion.div>
+        {/* <Image src={svgvideo} alt="svg video"/> */}
 
+        <h3>
+          Our mission is to Build Dreams by fostering transparent
+          collaborations. Explore our services and experience the fusion of
+          imagination and structural brilliance
+        </h3>
         {/* <AnimatedButton>Hover over me</AnimatedButton> */}
         {/* <AnimatedButton initialText="Hover over me" hoverText="Hovered!" /> */}
         <div ref={slider} className={styles.slider}>

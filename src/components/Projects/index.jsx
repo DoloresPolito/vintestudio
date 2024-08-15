@@ -128,8 +128,8 @@ export default function Projects() {
   return (
     <>
   
-  <MovingTitle title="PROJECTS"/>
-    <main
+  <MovingTitle title="FEATURED PROJECTS"/>
+    {/* <main
       onMouseMove={(e) => {
         moveItems(e.clientX, e.clientY);
       }}
@@ -137,7 +137,7 @@ export default function Projects() {
       id="projects"
     >
       
-      {/* <h2>PROJECTS</h2> */}
+
       <div className={styles.body}>
         {projects.map((project, index) => {
           return (
@@ -179,6 +179,8 @@ export default function Projects() {
                         src={`/images/${src}`}
                         width={300}
                         height={300}
+
+                        
                         // fill
                         alt="image"
                       />
@@ -208,7 +210,7 @@ export default function Projects() {
       ) : (
         <></>
       )}
-    </main>
+    </main> */}
     </>
   );
 }
