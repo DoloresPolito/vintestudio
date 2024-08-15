@@ -1,106 +1,134 @@
 .description {
-  height: auto;
-  padding-left: 4vw; 
-  padding-right: 4vw; 
-  padding-top: 2vw; 
-  padding-bottom: 10vw; 
+  height: 60vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-background-color: var(--text);
-color:var(--background);
-// border-radius: 30px;
-// margin: 0vw 1vw;
+  background-color: var(--text);
+  color: var(--background);
+
+  @media only screen and (max-width: 1000px) {
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
 
   .body {
-
     display: flex;
     justify-content: center;
-    // gap: 5vw; 
     position: relative;
 
+    span {
+      font-family: "OverusedGrotesk-Light", sans-serif;
+      font-weight: 300;
+      border-top: 1px solid var(--background);
+      line-height: 120%;
+      padding-right: 20vw;
+      margin-right: 40px;
+      font-size: 2vh;
+      padding-top: 1vh;
 
-
-    .left{
-      display: flex;
-      width: 50%;
-      height: auto;
-      flex-direction: column;
-
-      h2{
-        font-size: 7vh;
-        margin: 0;
-        margin-bottom: 13vh;
-        font-family: 'TalismanLight', sans-serif;
-      }
-      p {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        max-width: 30vw;
-        font-size: 1.5vw;
-        margin-top: 15vh;
-        font-family: 'TalismanCompactRegular', sans-serif;
-      }
-      
     }
-    .right{
-      display: flex;
-      width: 50%;
-      height: auto;
-      justify-content: flex-end;
 
+    p {
+      font-size: 4vh;
+      margin: 0;
+      font-weight: 300;
+      max-width: 60vw;
+      font-family: "OverusedGrotesk-Light", sans-serif;
+      line-height: 120%;
+      @media only screen and (max-width: 1000px) {
+        max-width: 90vw;
+      }
 
+    }
 
+    .styled-paragraph {
+      font-size: 1rem;
+      line-height: 1.5;
 
-      p {
-        margin: 0;
-        // font-family: "Roboto", sans-serif;
-        margin-top: 10vh;
-
-  
-        &:nth-of-type(1) {
-          font-size: 2vw;
-          gap: 0.8vw; 
-          line-height: 1.3;
-          font-weight: 200;
-  
-          @media screen and (max-width: 1000px) {
-            font-size: 2vw; 
-            line-height: 1.8;
-          }
-  
-          span {
-            margin-right: 0.3vw; 
-            font-family: "Roboto", sans-serif;
-      
-    
-          }
-  
-          .mask {
-            position: relative;
-            overflow: hidden;
-            display: inline-flex;
-          }
-        }
-  
-        &:nth-of-type(2) {
-          font-size: 1.8vw; // Ajuste proporcional usando vw
-          width: 80%;
-          font-weight: 300;
-        }
+      .highlighted {
+        font-weight: bold; // Cambia el peso de la fuente
+        color: #007bff; // Cambia el color de las palabras
+        border-top: 2px solid #007bff; // Agrega un borde superior
+        padding-top: 2px; // Ajusta el espacio entre el borde y el texto
+        display: inline-block; // Asegura que el span respete los bordes
+        align-items: flex-start;
+   
       }
     }
 
+    // .left{
+    //   display: flex;
+    //   width: 50%;
+    //   height: auto;
+    //   flex-direction: column;
+
+    //   h2{
+    //     font-size: 7vh;
+    //     margin: 0;
+    //     margin-bottom: 13vh;
+    //     font-family: 'TalismanLight', sans-serif;
+    //   }
+    //   p {
+    //     margin: 0;
+    //     font-family: "Roboto", sans-serif;
+    //     max-width: 30vw;
+    //     font-size: 1.5vw;
+    //     margin-top: 15vh;
+    //     font-family: 'TalismanCompactRegular', sans-serif;
+    //   }
+
+    // }
+    // .right{
+    //   display: flex;
+    //   width: 50%;
+    //   height: auto;
+    //   justify-content: flex-end;
+
+    //   p {
+    //     margin: 0;
+    //     margin-top: 10vh;
+
+    //     &:nth-of-type(1) {
+    //       font-size: 2vw;
+    //       gap: 0.8vw;
+    //       line-height: 1.3;
+    //       font-weight: 200;
+
+    //       @media screen and (max-width: 1000px) {
+    //         font-size: 2vw;
+    //         line-height: 1.8;
+    //       }
+
+    //       span {
+    //         margin-right: 0.3vw;
+    //         font-family: "Roboto", sans-serif;
+
+    //       }
+
+    //       .mask {
+    //         position: relative;
+    //         overflow: hidden;
+    //         display: inline-flex;
+    //       }
+    //     }
+
+    //     &:nth-of-type(2) {
+    //       font-size: 1.8vw; // Ajuste proporcional usando vw
+    //       width: 80%;
+    //       font-weight: 300;
+    //     }
+    //   }
+    // }
 
     @media screen and (max-width: 1000px) {
       padding-left: 0;
       padding-right: 0;
       gap: 0;
     }
-
-
-
-    
   }
 
   .moreWork {

@@ -8,14 +8,18 @@ export default function Index() {
     <>
       <div className={styles.section} id="contact">
         <MovingTitle title="CONTACT" svgColor="background" />
-<AnimatedDiv delay="200">
 
-
-        <h2>LET&apos;S WORK TOGHETER</h2>
-        </AnimatedDiv>
         <div className={styles.contentcontainer}>
           <div className={styles.left}>
-            <svg
+            <AnimatedDiv delay="200">
+              <p class="styled-paragraph">
+                <span class="highlighted">let&apos;s work together </span> Vinte
+                is a professional website design and development studio based in
+                Argentina. We create human experience in a digital world; using
+                the best practices and latest web standards guidelines.
+              </p>
+            </AnimatedDiv>
+            {/* <svg
               width="5vh"
               // height=""
               viewBox="0 0 40 40"
@@ -32,7 +36,7 @@ export default function Index() {
             </svg>
 
             <svg
-               width="5vh"
+              width="5vh"
               // height="40"
               viewBox="0 0 40 40"
               fill="none"
@@ -45,14 +49,12 @@ export default function Index() {
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
-            </svg>
+            </svg> */}
           </div>
           <AnimatedDiv>
-
-   
-          <div className={styles.right}>
-            <Contact />
-          </div>
+            <div className={styles.right}>
+              <Contact />
+            </div>
           </AnimatedDiv>
         </div>
 

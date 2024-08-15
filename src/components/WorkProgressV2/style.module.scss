@@ -19,13 +19,18 @@
     flex-direction: row;
     border-top: 1px solid var(--text);
 
+    @media only screen and (max-width: 1000px) {
+      flex-direction: column;
+
+    }
+
     // &:hover{
     //     background-color: var(--text);
     //     color: var(--background);
     // }
 
     h2{
-        font-size: 13vw;
+        font-size: 23vh;
         margin: 0;
         font-family: 'OverusedGrotesk-Light', sans-serif;
         font-weight: 400;
@@ -34,14 +39,22 @@
     h4{
 
         font-family: 'TalismanLight', sans-serif;
-        font-size: 2vw;
+        font-size: 3vh;
     }
 
     p{
         font-family: 'OverusedGrotesk-Light', sans-serif;
         font-weight: 300;
-        font-size: 1vw;
+        font-size: 2vh;
         max-width: 30vw;
+        @media only screen and (max-width: 1000px) {
+          max-width: 100%;
+          font-size: 2.3vh;
+        }
+
+        @media only screen and (max-width: 600px) {
+          font-size: 2vh;
+        }
   
         
     }
@@ -53,7 +66,9 @@
         display: flex;
         align-items: flex-start !important;
      justify-content: flex-start;
-
+     @media only screen and (max-width: 1000px) {
+          
+      width: 100%;}
 
     }
 
@@ -61,7 +76,9 @@
         height: auto;
         width: 40%;
 
-        
+        @media only screen and (max-width: 1000px) {
+          
+          width: 100%;}
     }
 
     .textcontainer{
@@ -70,8 +87,9 @@
         display: flex;
         justify-content: flex-end !important;
 
- 
-
+        @media only screen and (max-width: 1000px) {
+          
+          width: 100%;}
 
     }
   }

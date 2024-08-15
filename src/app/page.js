@@ -27,7 +27,7 @@ export default function Home() {
         setIsLoading(false);
         document.body.style.cursor = "default";
         window.scrollTo(0, 0);
-      }, 500);
+      }, 2000);
     })();
   }, []);
 
@@ -60,27 +60,23 @@ export default function Home() {
   return (
     <>
       <Layout>
-        {width > 600 ?      <Cursor/> : <></>}
-   
+        {width > 600 ? <Cursor /> : <></>}
+
         <AnimatePresence mode="wait">
           {isLoading ? (
             <Preloader key="preloader" />
           ) : (
-            
             <div key="content">
-      
               <TopHeader />
               <LandingV2 />
               <Description />
               <CardsSection />
-              <ProjectsV2/>
-              {width > 800 &&
-                <GridScroll />
-               }
-              
+              {/* <ProjectsV2 /> */}
+              {width > 800 && <GridScroll />}
+
               <Contact />
             </div>
-           )}
+          )} 
         </AnimatePresence>
       </Layout>
     </>

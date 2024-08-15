@@ -8,7 +8,9 @@
 
   @media only screen and (max-width: 1000px) {
     
-    width: 100%;
+    width: 90vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 
   form {
@@ -25,7 +27,7 @@
   justify-content: flex-end;
   width: 100%; 
   margin: 2vh 0;
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 1000px) {
     width: 100%; 
   }
 }
