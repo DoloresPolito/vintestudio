@@ -38,11 +38,11 @@ const ColorLayout = ({ children }) => {
 
   return (
     <div>
-      <header className={styles.themeSwitcher}>
+      {/* <header className={styles.themeSwitcher}>
         <button onClick={handleThemeChange}>
           <p>Change the mood</p>
         </button>
-      </header>
+      </header> */}
       <main>{children}</main>
     </div>
   );

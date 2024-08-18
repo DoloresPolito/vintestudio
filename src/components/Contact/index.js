@@ -13,10 +13,7 @@ export default function Index() {
           <div className={styles.left}>
             <AnimatedDiv delay="200">
               <p class="styled-paragraph">
-                <span class="highlighted">let&apos;s work together </span> Vinte
-                is a professional website design and development studio based in
-                Argentina. We create human experience in a digital world; using
-                the best practices and latest web standards guidelines.
+                <span class="highlighted">let&apos;s conect </span>I'll be happy to discuss how we can bring your digital vision to life. Let's connect and make your website stand out!
               </p>
             </AnimatedDiv>
             {/* <svg
