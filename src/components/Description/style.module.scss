@@ -60,69 +60,7 @@
       }
     }
 
-    // .left{
-    //   display: flex;
-    //   width: 50%;
-    //   height: auto;
-    //   flex-direction: column;
-
-    //   h2{
-    //     font-size: 7vh;
-    //     margin: 0;
-    //     margin-bottom: 13vh;
-    //     font-family: 'TalismanLight', sans-serif;
-    //   }
-    //   p {
-    //     margin: 0;
-    //     font-family: "Roboto", sans-serif;
-    //     max-width: 30vw;
-    //     font-size: 1.5vw;
-    //     margin-top: 15vh;
-    //     font-family: 'TalismanCompactRegular', sans-serif;
-    //   }
-
-    // }
-    // .right{
-    //   display: flex;
-    //   width: 50%;
-    //   height: auto;
-    //   justify-content: flex-end;
-
-    //   p {
-    //     margin: 0;
-    //     margin-top: 10vh;
-
-    //     &:nth-of-type(1) {
-    //       font-size: 2vw;
-    //       gap: 0.8vw;
-    //       line-height: 1.3;
-    //       font-weight: 200;
-
-    //       @media screen and (max-width: 1000px) {
-    //         font-size: 2vw;
-    //         line-height: 1.8;
-    //       }
-
-    //       span {
-    //         margin-right: 0.3vw;
-    //         font-family: "Roboto", sans-serif;
-
-    //       }
-
-    //       .mask {
-    //         position: relative;
-    //         overflow: hidden;
-    //         display: inline-flex;
-    //       }
-    //     }
-
-    //     &:nth-of-type(2) {
-    //       font-size: 1.8vw; // Ajuste proporcional usando vw
-    //       width: 80%;
-    //       font-weight: 300;
-    //     }
-    //   }
-    // }
+    
 
     @media screen and (max-width: 1000px) {
       padding-left: 0;

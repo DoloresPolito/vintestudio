@@ -1,5 +1,6 @@
 "use client";
 import styles from "./style.module.scss";
+import AnimatedDiv from "../AnimatedDiv";
 
 export default function WorkProgressV2() {
   const items = [
@@ -43,9 +44,13 @@ const Item = ({ item, isLast }) => {
         <div className={styles.titlecontainer}>
           <h4>{item.title}</h4>
         </div>
+ 
         <div className={styles.textcontainer}>
+        <AnimatedDiv>
           <p>{item.text}</p>
+          </AnimatedDiv>
         </div>
+    
       </div>
     </>
   );
