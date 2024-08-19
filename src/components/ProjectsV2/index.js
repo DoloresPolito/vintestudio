@@ -44,6 +44,20 @@ export default function ProjectsV2() {
 }
 
 const Item = ({ project }) => {
+
+  const underlineVariants = {
+    initial: {
+      width: 0,
+    },
+    hover: {
+      width: "100%",
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+  
   return (
    
     <div className={styles.project} >
@@ -60,9 +74,19 @@ const Item = ({ project }) => {
           <h4>{project.title}</h4>
         </div>
         <Link href={project.link}>
-        <div className={styles.right}>
-          <p>view more</p>
-        </div>
+        {/* <div className={styles.right}> */}
+        <motion.div className={styles.right} whileHover="hover">
+                      <p class="styled-paragraph">
+                        {/* <span class="highlighted">{link.id} </span>  */}
+                        view more
+                      </p>
+                      <motion.div
+                        className={styles.underline}
+                        variants={underlineVariants}
+                      />
+                           </motion.div>
+          {/* <p>view more</p> */}
+        {/* </div> */}
         </Link>
       </div>
     </div>
