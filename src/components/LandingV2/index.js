@@ -6,12 +6,12 @@ import { useRef } from "react";
 
 export default function LandingV2() {
   const phrase = "We are crafters of new generations websites.";
-  const title = useRef(null);
-  const isInView = useInView(title);
+  const home = useRef(null);
+  const isInView = useInView(home);
 
   return (
     <>
-      <div className={styles.section} ref={title} id="title">
+      <div className={styles.section} ref={home} id="home">
         {/* <motion.div
           className={styles.slider}
           variants={opacity}

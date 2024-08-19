@@ -23,7 +23,7 @@ export default function WorkProgressV2() {
 
   return (
     <>
-      <div className={styles.section}>
+      <div className={styles.section} id="work">
         {items.map((item, i) => {
           return <Item key={i} item={item} isLast={i === items.length - 1}/>;
         })}

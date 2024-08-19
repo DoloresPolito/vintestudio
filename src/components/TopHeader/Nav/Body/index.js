@@ -43,7 +43,7 @@ export default function Body({
             to={href}
             spy={true}
             smooth={true}
-            offset={0}
+            offset={link.offset}
             duration={800}
             onClick={handleLinkClick}
           >

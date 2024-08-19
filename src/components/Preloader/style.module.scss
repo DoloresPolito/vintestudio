@@ -10,12 +10,17 @@
   background-color: var(--text);
 
   h2 {
-    font-size: 200px;
+    font-size: 15vw;
     color: var(--background);
     position: absolute;
     width: 100%;
     z-index: 5000;
+    line-height: 120%;
     font-family: "TalismanCompactRegular", sans-serif;
+
+    @media screen and (max-width: 800px) {
+      font-size: 30vw;
+    }
   }
   img{
       position: absolute;
@@ -38,15 +43,18 @@
   }
   p{
       display: flex;
-
       color:var(--background);
-      font-size: 42px;
+      font-size: 5vw;
       align-items: center;
       position: absolute;
       bottom:0px;
       right: 20%;
       z-index: 1;
       font-family: var(--font-jose);
+
+      @media screen and (max-width: 800px) {
+        font-size: 3vw;
+      }
 
   }
 }

@@ -12,27 +12,32 @@ const links = [
   {
     title: "Home",
     href: "home",
-    src: "decimal.jpg"
+    src: "decimal.jpg",
+    offset:0
   },
   {
     title: "About",
     href: "description",
-    src: "background3.png"
+    src: "background3.png",
+    offset:-150
   },
   {
     title: "Work Progress",
     href: "work",
-    src: "decimal.jpg"
+    src: "decimal.jpg",
+    offset:-60
   },
   {
     title: "Projects",
     href: "projects",
-    src: "background3.png"
+    src: "background3.png",
+    offset:-350
   },
   {
     title: "Contact",
     href: "contact",
-    src: "decimal.jpg"
+    src: "decimal.jpg",
+    offset:-100
   }
 ]
 

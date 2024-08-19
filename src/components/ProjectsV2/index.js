@@ -55,7 +55,7 @@ export default function ProjectsV2() {
 const Item = ({ project }) => {
   return (
     <>
-      <div className={styles.project}>
+      <div className={styles.project} id="projects">
         <div className={styles.imagecontainer}>
           <Image
             src={project.src}
