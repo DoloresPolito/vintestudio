@@ -27,8 +27,8 @@ export default function FooterIndex() {
                 <div className={styles.list}>
                   {index.map((item, i) => {
                     return (
-                      <AnimatedDiv>
-                        <div className={styles.item} key={i}>
+                      <AnimatedDiv key={i}>
+                        <div className={styles.item} >
                           <p>{item.i}</p>
                           <p className={styles.title1}>{item.title}</p>
                           <p className={styles.title2}>{item.title}</p>
@@ -45,8 +45,8 @@ export default function FooterIndex() {
                 <div className={styles.list}>
                   {social.map((item, i) => {
                     return (
-                      <AnimatedDiv>
-                        <div className={styles.item} key={i}>
+                      <AnimatedDiv key={i}>
+                        <div className={styles.item} >
                           <p>{item.i}</p>
                           <p className={styles.title1}>{item.title}</p>
                           <p className={styles.title2}>{item.title}</p>
