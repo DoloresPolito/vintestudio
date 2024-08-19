@@ -19,3 +19,8 @@ body {
   --background: #{$theme-3-background};
   --text: #{$theme-3-text};
 }
+
+.theme-4 {
+  --background: #{$theme-4-background};
+  --text: #{$theme-4-text};
+}

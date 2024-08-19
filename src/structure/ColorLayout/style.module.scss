@@ -1,6 +1,6 @@
 .themeSwitcher {
   position: fixed;
-  top: 2vh; 
+  bottom: 5.5vh; 
   right: 2vw; 
   // transform: translateX(-50%);
   display: flex;
@@ -11,15 +11,15 @@
   }
 
   button {
-    padding: 1vh 2vw; // Ajuste proporcional usando vh y vw
+    padding: 0.5vh 1vw; // Ajuste proporcional usando vh y vw
     cursor: pointer;
     border: none;
     background-color: transparent;
-    color: var(--text);
+    color: rgb(145, 145, 145);
     border-radius: 0.5vw; // Ajuste proporcional usando vw
-    border: 1px solid var(--text);
+    // border: 1px solid var(--text);
     transition: background-color 0.3s, color 0.3s;
-    font-size: 2vh;
+    font-size: 1.7vh;
 
     @media only screen and (max-width: 600px) {
       padding: 0.5vh 1vw; 

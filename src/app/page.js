@@ -14,6 +14,8 @@ import ProjectsV2 from "@/components/ProjectsV2";
 import { useEffect, useState } from "react";
 import Layout from "../structure/ColorLayout";
 import Cursor from "../components/Cursor";
+import FooterIndex from "@/components/FooterIndex";
+
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -75,6 +77,7 @@ export default function Home() {
               {width > 800 && <GridScroll />}
 
               <Contact />
+              <FooterIndex/>
             </div>
           )} 
         </AnimatePresence>

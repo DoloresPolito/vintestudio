@@ -24,17 +24,18 @@ export default function WorkProgressV2() {
     <>
       <div className={styles.section}>
         {items.map((item, i) => {
-          return <Item key={i} item={item} />;
+          return <Item key={i} item={item} isLast={i === items.length - 1}/>;
         })}
       </div>
     </>
   );
 }
 
-const Item = ({ item }) => {
+const Item = ({ item, isLast }) => {
   return (
     <>
-      <div className={styles.item}>
+
+      <div className={`${styles.item} ${isLast ? styles.lastItem : ''}`}>
         
         <div className={styles.indexcontainer}>
           <h2>{item.index}</h2>
