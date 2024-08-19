@@ -8,7 +8,7 @@ import MovingTitle from "../MovingTitle";
 const projects = [
   {
     title: "N1U",
-    src: "/images/n1u.png",
+    src: "/work/n1u.2.png",
     color: "#706D63",
     link: "https://n1u.app/",
   },
@@ -22,16 +22,18 @@ const projects = [
   //   },
   {
     title: "INES MIGUENS PHOTO",
-    src: "/images/ines.png",
+    src: "/work/ines.1.png",
     color: "black",
     link: "https://inesmiguens.vercel.app/",
   },
   {
     title: "KOIBANX",
-    src: "/images/koi.png",
+    src: "/work/koi.4.png",
     color: "#8C8C8C",
     link: "https://koibanx.com/",
   },
+ 
+ 
 ];
 
 export default function ProjectsV2() {

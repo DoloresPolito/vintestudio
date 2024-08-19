@@ -72,8 +72,9 @@ export default function Home() {
               <TopHeader />
               <LandingV2 />
               <Description />
+              <ProjectsV2 />
               <CardsSection />
-              {/* <ProjectsV2 /> */}
+     
               {width > 800 && <GridScroll />}
 
               <Contact />
