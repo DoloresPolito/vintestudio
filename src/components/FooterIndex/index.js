@@ -1,18 +1,39 @@
 import styles from "./style.module.scss";
 import AnimatedDiv from "../AnimatedDiv";
+import Link from "next/link";
+import { Link as SmoothLink } from "react-scroll";
 
 export default function FooterIndex() {
   const index = [
-    { i: "0", title: "Home" },
-    { i: "1", title: "Projects" },
-    { i: "2", title: "Contact" },
-    { i: "3", title: "Provacy Policy" },
+    { i: "0", title: "Home", href: "home", offset: 0 },
+    {
+      i: "1",
+      title: "Projects",
+      href: "projects",
+
+      offset: -350,
+    },
+    {
+      i: "2",
+      title: "Contact",
+      href: "contact",
+
+      offset: -100,
+    },
+    {
+      i: "3",
+      title: "Provacy Policy",
+    },
   ];
 
   const social = [
-    { i: "0", title: "Linkedin" },
-    { i: "1", title: "Instagram" },
-    { i: "2", title: "E-mail" },
+    { i: "0", title: "E-mail", link: "mailto:vintestudio@gmail.com" },
+    {
+      i: "1",
+      title: "Whatsapp",
+      link: "https://api.whatsapp.com/send/?phone=543446584076",
+    },
+    // { i: "2", title: "Instagram" },
   ];
   return (
     <>
@@ -28,11 +49,19 @@ export default function FooterIndex() {
                   {index.map((item, i) => {
                     return (
                       <AnimatedDiv key={i}>
-                        <div className={styles.item} >
-                          <p>{item.i}</p>
-                          <p className={styles.title1}>{item.title}</p>
-                          <p className={styles.title2}>{item.title}</p>
-                        </div>
+                        <SmoothLink
+                          to={item.href}
+                          spy={true}
+                          smooth={true}
+                          offset={item.offset}
+                          duration={800}
+                        >
+                          <div className={styles.item}>
+                            <p>{item.i}</p>
+                            <p className={styles.title1}>{item.title}</p>
+                            <p className={styles.title2}>{item.title}</p>
+                          </div>
+                        </SmoothLink>
                       </AnimatedDiv>
                     );
                   })}
@@ -46,11 +75,13 @@ export default function FooterIndex() {
                   {social.map((item, i) => {
                     return (
                       <AnimatedDiv key={i}>
-                        <div className={styles.item} >
-                          <p>{item.i}</p>
-                          <p className={styles.title1}>{item.title}</p>
-                          <p className={styles.title2}>{item.title}</p>
-                        </div>
+                        <Link href={item.link} target="_blank">
+                          <div className={styles.item}>
+                            <p>{item.i}</p>
+                            <p className={styles.title1}>{item.title}</p>
+                            <p className={styles.title2}>{item.title}</p>
+                          </div>
+                        </Link>
                       </AnimatedDiv>
                     );
                   })}
