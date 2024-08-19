@@ -6,9 +6,9 @@
   display: flex;
   gap: 1vw; 
   z-index: 10000;
-  @media only screen and (max-width: 600px) {
-    top: 9vh; 
-  }
+  // @media only screen and (max-width: 600px) {
+  //   top: 9vh; 
+  // }
 
   button {
     padding: 0.5vh 1vw; // Ajuste proporcional usando vh y vw
@@ -21,9 +21,9 @@
     transition: background-color 0.3s, color 0.3s;
     font-size: 1.7vh;
 
-    @media only screen and (max-width: 600px) {
-      padding: 0.5vh 1vw; 
-    }
+    // @media only screen and (max-width: 600px) {
+    //   padding: 0.5vh 1vw; 
+    // }
 
 
     p{
