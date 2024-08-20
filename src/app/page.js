@@ -85,7 +85,7 @@ export default function Home() {
             <div key="content">
               <TopHeader />
               <LandingV2 />
-              <Description />
+              {/* <Description /> */}
               <ProjectsV2 />
               <CardsSection />
      

@@ -4,6 +4,7 @@ import { slideUp, opacity, slideUp2 } from "./animation";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
 import dynamic from "next/dynamic";
+import AnimatedDiv from "../AnimatedDiv";
 
 const Earth = dynamic(() => import("@/components/Earth"), {
   ssr: false,
@@ -28,6 +29,11 @@ export default function LandingV2() {
           animate="enter"
         >
           <h1>We are crafters of new generations websites.</h1>
+
+          {/* <p>
+            The results are digital experiences lovingly hand coded by combining
+            business strategy, identity, UX/UI, and content.
+          </p> */}
         </motion.div>
         {/* 
         <h1 >
@@ -56,6 +62,23 @@ export default function LandingV2() {
             The results are digital experiences lovingly hand coded by combining
             business strategy, identity, UX/UI, and content.
           </p>
+
+          <div 
+     id="description"
+     className={styles.description}>
+        <AnimatedDiv>
+     
+          <p class="styled-paragraph">
+            <span class="highlighted">who we are </span> Vinte is a professional
+            website design and development studio based in Argentina. We create
+            human experience in a digital world; using the best practices and
+            latest web standards guidelines.
+          </p>
+
+       
+
+        </AnimatedDiv>
+      </div>
         </motion.div>
       </div>
     </>
