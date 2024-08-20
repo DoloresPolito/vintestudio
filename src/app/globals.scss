@@ -9,6 +9,7 @@
 body {
   font-family: var(--font-michroma);
   font-family: "Michroma", sans-serif;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -22,7 +23,7 @@ body {
   margin: 0;
   font-family: var(--font-michroma);
   font-family: "Michroma", sans-serif;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 .font-michroma {
