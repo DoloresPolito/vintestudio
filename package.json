@@ -10,10 +10,12 @@
   },
   "dependencies": {
     "@next/font": "^14.2.5",
+    "@react-three/fiber": "^8.17.5",
     "@studio-freight/lenis": "^1.0.42",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.10",
     "framer-motion": "^10.13.0",
+    "framer-motion-3d": "^11.3.28",
     "gsap": "^3.12.2",
     "locomotive-scroll": "^5.0.0-beta.8",
     "next": "13.4.10",

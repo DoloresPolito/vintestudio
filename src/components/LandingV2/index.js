@@ -3,6 +3,15 @@ import styles from "./style.module.scss";
 import { slideUp, opacity, slideUp2 } from "./animation";
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
+import dynamic from "next/dynamic";
+
+const Earth = dynamic(() => import("@/components/Earth"), {
+  ssr: false,
+
+  // loading: () => 
+  // <img src="/assets/placeholder.png"></img>
+  // ,
+});
 
 export default function LandingV2() {
   const phrase = "We are crafters of new generations websites.";
@@ -12,15 +21,15 @@ export default function LandingV2() {
   return (
     <>
       <div className={styles.section} ref={home} id="home">
-        {/* <motion.div
+        <motion.div
           className={styles.slider}
           variants={opacity}
           initial="initial"
           animate="enter"
         >
           <h1>We are crafters of new generations websites.</h1>
-        </motion.div> */}
-
+        </motion.div>
+        {/* 
         <h1 >
           {phrase.split(" ").map((word, index) => {
             return (
@@ -36,7 +45,12 @@ export default function LandingV2() {
               </span>
             );
           })}
-        </h1>
+        </h1> */}
+        <motion.div className={styles.earthcontainer}      variants={opacity}
+          initial="initial"
+          animate="enter">
+          <Earth />
+        </motion.div>
         <motion.div variants={slideUp} initial="initial" animate="enter">
           <p>
             The results are digital experiences lovingly hand coded by combining
