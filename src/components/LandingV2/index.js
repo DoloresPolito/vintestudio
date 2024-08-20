@@ -9,7 +9,7 @@ import AnimatedDiv from "../AnimatedDiv";
 const Earth = dynamic(() => import("@/components/Earth"), {
   ssr: false,
 
-  // loading: () => 
+  // loading: () =>
   // <img src="/assets/placeholder.png"></img>
   // ,
 });
@@ -52,33 +52,30 @@ export default function LandingV2() {
             );
           })}
         </h1> */}
-        <motion.div className={styles.earthcontainer}      variants={opacity}
+        <motion.div
+          className={styles.earthcontainer}
+          variants={opacity}
           initial="initial"
-          animate="enter">
+          animate="enter"
+        >
           <Earth />
         </motion.div>
-        <motion.div variants={slideUp} initial="initial" animate="enter">
-          <p>
+        <motion.div variants={slideUp} initial="initial" animate="enter"    className={styles.textcontainer}>
+          <p className={styles.results}>
             The results are digital experiences lovingly hand coded by combining
             business strategy, identity, UX/UI, and content.
           </p>
 
-          <div 
-     id="description"
-     className={styles.description}>
-        <AnimatedDiv>
-     
-          <p class="styled-paragraph">
-            <span class="highlighted">who we are </span> Vinte is a professional
-            website design and development studio based in Argentina. We create
-            human experience in a digital world; using the best practices and
-            latest web standards guidelines.
-          </p>
-
-       
-
-        </AnimatedDiv>
-      </div>
+          <div id="description" className={styles.description}>
+            <AnimatedDiv>
+              <p class="styled-paragraph">
+                <span class="highlighted">who we are </span> Vinte is a
+                professional website design and development studio based in
+                Argentina. We create human experience in a digital world; using
+                the best practices and latest web standards guidelines.
+              </p>
+            </AnimatedDiv>
+          </div>
         </motion.div>
       </div>
     </>
