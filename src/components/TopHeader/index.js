@@ -13,7 +13,7 @@ export default function Index() {
 
   const navdesktop = [
     { id: "1.", title: "HOME", url: "/", href: "home" },
-    { id: "2.", title: "PROJECTS", url: "/", href: "description" },
+    { id: "2.", title: "PROJECTS", url: "/", href: "projects" },
     { id: "3.", title: "CONTACT", url: "/", href: "contact" },
   ];
 
@@ -33,9 +33,19 @@ export default function Index() {
   return (
     <div className={styles.header}>
       <div className={styles.bar}>
-        <Link href="/">
+        <Link to="home" spy={true} smooth={true} offset={-100} duration={800}>
           <div className={styles.logocontainer}>
-            <h2>VINTE STUDIO</h2>
+            <div className={styles.header2}>
+              <div className={styles.logo}>
+                <p className={styles.copyright}>©</p>
+                <div className={styles.name}>
+                  <p className={styles.codeBy}>Vinte</p>
+                  <p className={styles.dennis}>Studio</p>
+                  <p className={styles.snellenberg}>Vinte </p>
+                  <p className={styles.snellenberg2}> Studio</p>
+                </div>
+              </div>
+            </div>
           </div>
         </Link>
         <div
@@ -78,7 +88,7 @@ export default function Index() {
                     to={link.href}
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-100}
                     duration={800}
                   >
                     <motion.div className={styles.navitem} whileHover="hover">

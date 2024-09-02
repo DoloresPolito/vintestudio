@@ -9,6 +9,80 @@
   border-bottom: 1px solid var(--text);
   // height: 8vh;
 
+  .header2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: space-between;
+    width: auto;
+    font-weight: 300;
+    box-sizing: border-box;
+    align-items: center;
+    margin-top: -1vh;
+  
+    .logo {
+      display: flex;
+      cursor: pointer;
+  
+      p {
+        margin: 0px;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+      }
+      .name {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-left: 1px;
+        transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  
+        p {
+          position: relative;
+          transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+          &:nth-of-type(2) {
+            padding-left: 0.3em;
+          }
+          &:nth-of-type(3) {
+            position: absolute;
+            top:80px;
+            // left: 180px;
+            padding-left: 0.3em;
+          }
+          &:nth-of-type(4) {
+            position: absolute;
+            top:80px;
+            left: 60px;
+            padding-left: 0.3em;
+          }
+        }
+      }
+      &:hover {
+        .copyright {
+          transform: rotate(360deg);
+        }
+  
+        .name {
+          // padding-right: 30px;
+          .codeBy {
+            transform: translateY(-100%);
+          }
+          .dennis {
+            transform: translateY(-100px);
+          }
+          .snellenberg {
+            transform: translateY(-80px);
+          }
+          .snellenberg2 {
+            transform: translateY(-80px);
+          }
+        }
+      }
+    }
+  
+    
+  }
+
   .background {
     background-color: var(--text);
     opacity: 0.5;
@@ -251,3 +325,5 @@
 //     }
 //   }
 // }
+
+

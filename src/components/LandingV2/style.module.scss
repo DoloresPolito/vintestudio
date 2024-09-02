@@ -40,10 +40,31 @@
   overflow-x: hidden;
 
   @media screen and (max-width: 1000px) {
-    height: 120vh;
+    height: auto;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    .circlecontainer {
+      align-self: center;
+      height: auto;
+    }
+  }
+
+  .circlesvg {
+    width: 50vw;
+    height: 80vh;
+
+    @media screen and (max-width: 1000px) {
+      width: 80vw;
+      height: 70vh;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 90vw;
+      height: 70vh;
+      margin-top: -25vh;
+    }
   }
 
   .circletext {
@@ -140,27 +161,114 @@
   }
 
   .textcontainer {
-    position: absolute;
-    height: 100vh;
-    width: 40vw;
-left: 50vw;
-top:40vh;
-    // background-color: red;
+    // position: absolute;
+    height: auto;
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    margin-right: 10vw;
+
     @media screen and (max-width: 1000px) {
-      height: 60vh;
-      bottom: 0;
-      width: 90vw;
-      z-index: 100;
-      align-items: center;
+      width: 80vw;
+      margin-right: 0vw;
     }
+
+    @media screen and (max-width: 600px) {
+      margin-top: -25vh;
+    }
+
     .results {
-      position: absolute;
-      right: 0;
+      font-size: 3vh;
+      margin: 0;
 
       @media screen and (max-width: 1000px) {
-        position: relative;
-        right: 0;
-        z-index: 100;
+        text-align: center;
+        max-width: 70vw;
+        align-self: center;
+      }
+    }
+
+    .bottombuttons {
+      display: flex;
+      margin-top: 0;
+
+      @media screen and (max-width: 1000px) {
+        justify-content: center;
+      }
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        margin-bottom: 10vh;
+      }
+    }
+
+    .buttoncontainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 15vw;
+      height: auto;
+      background-color: var(--text);
+      padding: 10px 10px;
+      margin: 5px 10px;
+      border-radius: 10px;
+      @media screen and (max-width: 1000px) {
+        width: auto;
+      }
+
+      @media screen and (max-width: 600px) {
+     justify-content: center;
+     align-items: center;
+                }
+      &:hover {
+        background-color: var(--background);
+        border: 1px solid var(--text);
+
+        h6 {
+          color: var(--text);
+        }
+      }
+
+      // @media only screen and (max-width: 1000px) {
+      //   display: none;
+      // }
+
+      h6 {
+        font-family: "TalismanLight", sans-serif;
+        font-weight: 400;
+        font-size: 2.5vh;
+        letter-spacing: 0.5px;
+        color: var(--background);
+        max-width: 150px;
+        margin: 0;
+      }
+
+      .button {
+        background-color: var(--background);
+        color: var(--text);
+        width: 98%;
+
+        border-radius: 10px;
+        display: flex;
+        align-items: flex-end;
+
+
+
+        &:hover {
+          opacity: 0.9;
+        }
+
+        p {
+          font-family: "OverusedGrotesk-Light", sans-serif;
+          font-weight: 300;
+          font-size: 2.5vh;
+          padding-left: 10px;
+
+       
+        }
       }
     }
   }

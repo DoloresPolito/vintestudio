@@ -41,27 +41,18 @@ export default function LandingV2() {
   return (
     <>
       <div className={styles.section} ref={home} id="home">
-        {/* <motion.div
-          className={styles.slider}
-          variants={opacity}
-          initial="initial"
-          animate="enter"
-        >
-          <h1>We are crafters of new generations websites.</h1>
-
-
-        </motion.div> */}
         <div
+        className={styles.circlecontainer}
           style={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             height: "90vh",
-     
           }}
         >
           <motion.svg
-            style={{ rotate: rotate, width: "50vw", height: "80vh" }}
+          className={styles.circlesvg}
+            style={{ rotate: rotate}}
             viewBox="0 0 100 100"
           >
             <path
@@ -84,7 +75,46 @@ export default function LandingV2() {
           </motion.svg>
         </div>
 
-        {/* 
+        <motion.div
+          variants={slideUp}
+          initial="initial"
+          animate="enter"
+          className={styles.textcontainer}
+        >
+          <p className={styles.results}>
+            The results are digital experiences lovingly hand coded by combining
+            business strategy, identity, UX/UI, and content.
+          </p>
+
+          <div className={styles.bottombuttons}>
+            <div className={styles.buttoncontainer}>
+              <h6>know us better</h6>
+            </div>
+            <div className={styles.buttoncontainer}>
+              <h6>featured projects</h6>
+            </div>
+          </div>
+        </motion.div>
+      </div>
+    </>
+  );
+}
+
+{
+  /* <motion.div
+          className={styles.slider}
+          variants={opacity}
+          initial="initial"
+          animate="enter"
+        >
+          <h1>We are crafters of new generations websites.</h1>
+
+
+        </motion.div> */
+}
+
+{
+  /* 
         <h1 >
           {phrase.split(" ").map((word, index) => {
             return (
@@ -100,31 +130,17 @@ export default function LandingV2() {
               </span>
             );
           })}
-        </h1> */}
-        {/* <motion.div
+        </h1> */
+}
+{
+  /* <motion.div
           className={styles.earthcontainer}
           variants={opacity}
           initial="initial"
           animate="enter"
         >
           <Earth />
-        </motion.div> */}
-        <motion.div
-          variants={slideUp}
-          initial="initial"
-          animate="enter"
-          className={styles.textcontainer}
-        >
-          <p className={styles.results}>
-            The results are digital experiences lovingly hand coded by combining
-            business strategy, identity, UX/UI, and content.
-          </p>
-
-
-        </motion.div>
-      </div>
-    </>
-  );
+        </motion.div> */
 }
 
 // import React, { useRef, useEffect } from "react";

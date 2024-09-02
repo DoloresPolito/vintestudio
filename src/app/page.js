@@ -91,7 +91,7 @@ export default function Home() {
      
               {width > 800 && <GridScroll />}
 
-{/* <SectionPruebas/> */}
+<SectionPruebas/>
               <Contact />
               <FooterIndex/>
             </div>

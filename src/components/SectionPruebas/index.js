@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <div className={styles.section}>
-        {/* <div className={styles.header}>
+        <div className={styles.header}>
           <div className={styles.logo}>
             <p className={styles.copyright}>©</p>
             <div className={styles.name}>
@@ -27,9 +27,9 @@ export default function Index() {
               <p className={styles.snellenberg2}> Studio</p>
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <CircleMoving/>
+        {/* <CircleMoving/> */}
       </div>
     </>
   );
