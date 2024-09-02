@@ -16,7 +16,6 @@ export default function Index() {
     { id: "2.", title: "PROJECTS", url: "/", href: "projects" },
     { id: "3.", title: "CONTACT", url: "/", href: "contact" },
   ];
-
   const underlineVariants = {
     initial: {
       width: 0,

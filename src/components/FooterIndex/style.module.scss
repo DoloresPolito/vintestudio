@@ -6,7 +6,7 @@
   align-items: center;
   background-color: var(--background);
   color: var(--text);
-padding:5vh 0;
+padding-top:4vh;
   a{
     text-decoration: none;
   }
@@ -158,7 +158,7 @@ padding:5vh 0;
       padding: 10px 10px;
       margin: 0px 10px;
       border-radius: 10px;
-
+      z-index: 20000;
       @media only screen and (max-width: 1000px) {
         display: none;
       }

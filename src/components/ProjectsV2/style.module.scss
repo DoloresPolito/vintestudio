@@ -24,6 +24,7 @@
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
+      margin-top: 0vh;
     }
 
     .project {
@@ -31,9 +32,11 @@
       padding-bottom: 32%; /* Esto asegura que el contenedor sea cuadrado */
       position: relative;
 
+
       @media screen and (max-width: 800px) {
         width: 100%;
         padding-bottom: 100%;
+        margin-bottom: 3vh;
       }
 
       .imagecontainer {
@@ -41,8 +44,14 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 85%;
+        height: 80%;
         overflow: hidden;
+        border-radius: 20px;
+        opacity: 0.8;
+
+        &:hover{
+          opacity: 1;
+        }
       }
 
       .imagecontainer img {
@@ -59,21 +68,25 @@
         height: 20%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: flex-end;
-        // padding: 10px;
+        padding: 10px;
+    
+  
+ 
 
         .left {
           display: flex;
           flex-direction: column;
           justify-content: center;
-          align-items: flex-start;
+          align-items: center;
 
           h4 {
             font-family: "TalismanLight", sans-serif;
             font-size: 3vh;
             font-weight: 300;
             margin: 0;
+            text-align: center;
           }
 
           p {
@@ -81,6 +94,7 @@
             font-weight: 300;
             font-size: 1.7vh;
             color: rgb(145, 145, 145);
+            text-align: center;
           }
         }
 

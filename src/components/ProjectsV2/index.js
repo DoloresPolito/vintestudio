@@ -11,21 +11,28 @@ const projects = [
     src: "/work/n1u.2.png",
     color: "#706D63",
     link: "https://n1u.app/",
-    text:"Development"
+    text: "Development",
   },
   {
     title: "INES MIGUENS PHOTO",
     src: "/work/ines.1.png",
     color: "black",
     link: "https://inesmiguens.vercel.app/",
-    text:"Development & Design"
+    text: "Development & Design",
   },
   {
     title: "KOIBANX",
     src: "/work/koi.4.png",
     color: "#8C8C8C",
     link: "https://koibanx.com/",
-    text:"Development"
+    text: "Development",
+  },
+  {
+    title: "CAPILLARIE",
+    src: "/work/capillarie.png",
+    color: "#8C8C8C",
+    link: "https://capillarie.com/",
+    text: "Development & Design",
   },
 ];
 
@@ -35,7 +42,6 @@ export default function ProjectsV2() {
       <MovingTitle title="FEATURED PROJECTS" />
       <div className={styles.projectscontainer}>
         {projects.map((project, i) => (
-          
           <Item key={i} project={project} />
         ))}
       </div>
@@ -44,7 +50,6 @@ export default function ProjectsV2() {
 }
 
 const Item = ({ project }) => {
-
   const underlineVariants = {
     initial: {
       width: 0,
@@ -57,13 +62,14 @@ const Item = ({ project }) => {
       },
     },
   };
-  
+
   return (
-   
-    <div className={styles.project} >
+
+    <div className={styles.project}>
+          <Link href={project.link}>
       <motion.div
         className={styles.imagecontainer}
-        whileHover={{ scale: 0.9 }}
+        whileHover={{ scale: 0.95 }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <Image src={project.src} alt="project image" width={460} height={300} />
@@ -73,23 +79,24 @@ const Item = ({ project }) => {
           <p>{project.text}</p>
           <h4>{project.title}</h4>
         </div>
-        <Link href={project.link}>
-        {/* <div className={styles.right}> */}
-        <motion.div className={styles.right} whileHover="hover">
-                      <p class="styled-paragraph">
-                        {/* <span class="highlighted">{link.id} </span>  */}
-                        view more
-                      </p>
-                      <motion.div
-                        className={styles.underline}
-                        variants={underlineVariants}
-                      />
-                           </motion.div>
+        {/* <Link href={project.link}> */}
+          {/* <div className={styles.right}> */}
+          {/* <motion.div className={styles.right} whileHover="hover">
+            <p class="styled-paragraph">
+      
+              view more
+            </p>
+            <motion.div
+              className={styles.underline}
+              variants={underlineVariants}
+            />
+          </motion.div> */}
           {/* <p>view more</p> */}
-        {/* </div> */}
-        </Link>
+          {/* </div> */}
+        {/* </Link> */}
       </div>
+      </Link>
     </div>
-
+ 
   );
 };
