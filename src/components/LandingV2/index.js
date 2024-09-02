@@ -5,7 +5,7 @@ import { useInView, motion, useSpring } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import AnimatedDiv from "../AnimatedDiv";
-
+import { Link } from "react-scroll";
 // const Earth = dynamic(() => import("@/components/Earth"), {
 //   ssr: false,
 
@@ -87,12 +87,16 @@ export default function LandingV2() {
           </p>
 
           <div className={styles.bottombuttons}>
+          <Link to="description" spy={true} smooth={true} offset={-100} duration={800}>
             <div className={styles.buttoncontainer}>
               <h6>know us better</h6>
             </div>
+            </Link>
+            <Link to="projects" spy={true} smooth={true} offset={-100} duration={800}>
             <div className={styles.buttoncontainer}>
               <h6>featured projects</h6>
             </div>
+            </Link>
           </div>
         </motion.div>
       </div>

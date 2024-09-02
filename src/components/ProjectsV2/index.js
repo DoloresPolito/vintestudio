@@ -31,7 +31,7 @@ const projects = [
 
 export default function ProjectsV2() {
   return (
-    <div className={styles.section}>
+    <div className={styles.section} id="projects">
       <MovingTitle title="FEATURED PROJECTS" />
       <div className={styles.projectscontainer}>
         {projects.map((project, i) => (

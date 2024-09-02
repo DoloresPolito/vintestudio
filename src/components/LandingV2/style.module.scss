@@ -58,12 +58,13 @@
     @media screen and (max-width: 1000px) {
       width: 80vw;
       height: 70vh;
+      margin-top: -15vh;
     }
 
-    @media screen and (max-width: 500px) {
+    @media screen and (max-width: 600px) {
       width: 90vw;
       height: 70vh;
-      margin-top: -25vh;
+      margin-top: -30vh;
     }
   }
 
@@ -174,6 +175,7 @@
     @media screen and (max-width: 1000px) {
       width: 80vw;
       margin-right: 0vw;
+      margin-top: -15vh;
     }
 
     @media screen and (max-width: 600px) {
@@ -220,9 +222,9 @@
       }
 
       @media screen and (max-width: 600px) {
-     justify-content: center;
-     align-items: center;
-                }
+        justify-content: center;
+        align-items: center;
+      }
       &:hover {
         background-color: var(--background);
         border: 1px solid var(--text);
@@ -242,7 +244,7 @@
         font-size: 2.5vh;
         letter-spacing: 0.5px;
         color: var(--background);
-        max-width: 150px;
+        // max-width: 150px;
         margin: 0;
       }
 
@@ -255,8 +257,6 @@
         display: flex;
         align-items: flex-end;
 
-
-
         &:hover {
           opacity: 0.9;
         }
@@ -266,8 +266,6 @@
           font-weight: 300;
           font-size: 2.5vh;
           padding-left: 10px;
-
-       
         }
       }
     }

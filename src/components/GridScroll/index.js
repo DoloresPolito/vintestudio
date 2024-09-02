@@ -17,7 +17,6 @@ const images = [
   "work/koi.1.png",
   "work/ines.1.png",
   "work/koi.3.png",
-  "work/1.png",
 ];
 
 export default function Home() {
