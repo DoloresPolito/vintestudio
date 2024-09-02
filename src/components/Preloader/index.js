@@ -55,7 +55,7 @@ export default function Index() {
     >
       {dimension.width > 0 && (
         <>
-          <h2>VINTE STUDIO</h2>
+          {/* <h2>VINTE STUDIO</h2> */}
           <motion.p variants={opacity} initial="initial" animate="enter">
             {words[index]}
           </motion.p>

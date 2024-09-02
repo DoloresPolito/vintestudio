@@ -96,7 +96,7 @@ export default function Home() {
               <Contact />
               <FooterIndex/>
             </div>
-          )} 
+        )}
         </AnimatePresence>
       </Layout>
     </>

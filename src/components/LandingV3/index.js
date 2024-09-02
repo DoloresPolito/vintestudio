@@ -69,7 +69,7 @@ export default function LandingV3() {
               </p>
 
               <div className={styles.bottombuttons}>
-                <Link
+                {/* <Link
                   to="description"
                   spy={true}
                   smooth={true}
@@ -90,7 +90,7 @@ export default function LandingV3() {
                   <div className={styles.buttoncontainer}>
                     <h6>featured projects</h6>
                   </div>
-                </Link>
+                </Link> */}
               </div>
 
              
@@ -119,7 +119,7 @@ export default function LandingV3() {
                       <textPath
                         key={i}
                         ref={(ref) => (paths.current[i] = ref)}
-                        startOffset={i * 40 + "%"}
+                        startOffset={i * 30 + "%"}
                         href="#circle"
                       >
                         crafters of new generation websites :) .
