@@ -10,6 +10,11 @@ body {
   --text: #{$theme-1-text};
 }
 
+/* .theme-2 {
+  --background: #{$theme-2-background};
+  --text: #{$theme-2-text};
+} */
+
 .theme-2 {
   --background: #{$theme-2-background};
   --text: #{$theme-2-text};
@@ -18,9 +23,4 @@ body {
 .theme-3 {
   --background: #{$theme-3-background};
   --text: #{$theme-3-text};
-}
-
-.theme-4 {
-  --background: #{$theme-4-background};
-  --text: #{$theme-4-text};
 }

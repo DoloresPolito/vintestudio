@@ -26,13 +26,13 @@ function RotatingEarth() {
       // Movimiento en el eje Y (hacia arriba y hacia abajo)
       const scrollY = scrollYProgress.get() * -30; // Ajusta este valor para controlar la velocidad del desplazamiento hacia abajo
       meshRef.current.position.y = scrollY;
-      meshRef.current.position.x = scrollY;
+      // meshRef.current.position.x = scrollY;
 
     }
   });
 
   return (
-    <motion.mesh ref={meshRef} scale={4.5}>
+    <motion.mesh ref={meshRef} scale={2.5}>
       <sphereGeometry args={[1, 64, 64]} />
       <meshStandardMaterial
         color="#ffffff"
@@ -51,7 +51,7 @@ function RotatingEarth() {
 
 export default function Earth() {
   return (
-    <Canvas orthographic camera={{ position: [0, 0, 200], zoom: 100 }}>
+    <Canvas orthographic camera={{ position: [0, 0, 200], zoom: 100 }} >
     {/* Incrementa la intensidad de la luz ambiental */}
     <ambientLight intensity={0.5} /> 
     
