@@ -51,9 +51,37 @@ export default function LandingV2() {
   return (
     <>
       <div className={styles.section} ref={home} id="home">
-       
+
 
       <motion.div style={{ y }} className={styles.motionDiv}>
+
+
+      <motion.div
+          variants={slideUp}
+          initial="initial"
+          animate="enter"
+          className={styles.textcontainer}
+        >
+          <p className={styles.results}>
+            The results are digital experiences lovingly hand coded by combining
+            business strategy, identity, UX/UI, and content.
+          </p>
+
+          <div className={styles.bottombuttons}>
+          {/* <Link to="description" spy={true} smooth={true} offset={-100} duration={800}>
+            <div className={styles.buttoncontainer}>
+              <h6>know us better</h6>
+            </div>
+            </Link>
+            <Link to="projects" spy={true} smooth={true} offset={-100} duration={800}>
+            <div className={styles.buttoncontainer}>
+              <h6>featured projects</h6>
+            </div>
+            </Link> */}
+          </div>
+        </motion.div>    
+
+
         <div
         className={styles.circlecontainer}
           style={{
@@ -88,30 +116,7 @@ export default function LandingV2() {
           </motion.svg>
         </div>
 
-        <motion.div
-          variants={slideUp}
-          initial="initial"
-          animate="enter"
-          className={styles.textcontainer}
-        >
-          <p className={styles.results}>
-            The results are digital experiences lovingly hand coded by combining
-            business strategy, identity, UX/UI, and content.
-          </p>
-
-          <div className={styles.bottombuttons}>
-          <Link to="description" spy={true} smooth={true} offset={-100} duration={800}>
-            <div className={styles.buttoncontainer}>
-              <h6>know us better</h6>
-            </div>
-            </Link>
-            <Link to="projects" spy={true} smooth={true} offset={-100} duration={800}>
-            <div className={styles.buttoncontainer}>
-              <h6>featured projects</h6>
-            </div>
-            </Link>
-          </div>
-        </motion.div>    
+       
         </motion.div>    </div>
    
     </>

@@ -17,7 +17,8 @@ import Cursor from "../components/Cursor";
 import FooterIndex from "@/components/FooterIndex";
 import styles from './page.module.scss'
 import dynamic from 'next/dynamic';
-import SectionPruebas from "@/components/SectionPruebas"
+import SectionPruebas from "@/components/SectionPruebas";
+import LandingV3 from "@/components/LandingV3";
 
 const Earth = dynamic(() => import('@/components/Earth'), {
 
@@ -84,7 +85,7 @@ export default function Home() {
           ) : (
             <div key="content">
               <TopHeader />
-              <LandingV2 />
+              <LandingV3 />
               <Description />
               <ProjectsV2 />
               <CardsSection />
