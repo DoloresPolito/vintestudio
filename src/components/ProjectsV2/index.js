@@ -66,7 +66,7 @@ const Item = ({ project }) => {
   return (
 
     <div className={styles.project}>
-          <Link href={project.link}>
+          <Link href={project.link} target="_blank">
       <motion.div
         className={styles.imagecontainer}
         whileHover={{ scale: 0.95 }}

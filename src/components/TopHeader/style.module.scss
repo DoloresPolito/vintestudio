@@ -47,14 +47,17 @@
             position: absolute;
             top:80px;
             // left: 180px;
-            padding-left: 0.3em;
+            // padding-left: 0.3em;
           }
           &:nth-of-type(4) {
             position: absolute;
             top:80px;
-            left: 60px;
-            padding-left: 0.3em;
+            left: 55px;
+            // padding-left: 0.3em;
+            // padding-right: 0.3em;
+
           }
+     
         }
       }
       &:hover {
@@ -72,9 +75,11 @@
           }
           .snellenberg {
             transform: translateY(-80px);
+     
           }
           .snellenberg2 {
             transform: translateY(-80px);
+            // padding-left: 3px !important;
           }
         }
       }
@@ -268,12 +273,12 @@
       }
 
       .burger {
-        width: 2vw;
+        width: 5vh;
         position: relative;
         pointer-events: none;
 
         @media only screen and (max-width: 1000px) {
-          width: 3vw;
+          width: 4vh;
         }
 
         &::after,

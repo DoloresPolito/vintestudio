@@ -18,13 +18,23 @@
   .projectscontainer {
     width: 100%;
     display: flex;
+
     justify-content: center;
     gap: 1%;
     margin-top: 15vh;
+    flex-wrap: nowrap;
+
+    @media screen and (max-width: 1000px) and (min-width: 800px) {
+      gap: 2%; // Ajusta el espacio entre los elementos si es necesario
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
       margin-top: 0vh;
+      width: 97%;
+      margin: 0 auto;;
     }
 
     .project {
@@ -32,6 +42,10 @@
       padding-bottom: 32%; /* Esto asegura que el contenedor sea cuadrado */
       position: relative;
 
+      @media screen and (max-width: 1000px) and (min-width: 800px) {
+        width: 48%; /* Cambia el ancho para que haya dos elementos por fila */
+        padding-bottom: 48%; /* Mantén el aspecto cuadrado */
+      }
 
       @media screen and (max-width: 800px) {
         width: 100%;
@@ -47,9 +61,9 @@
         height: 80%;
         overflow: hidden;
         border-radius: 20px;
-        opacity: 0.8;
+        opacity: 0.9;
 
-        &:hover{
+        &:hover {
           opacity: 1;
         }
       }
@@ -71,9 +85,6 @@
         justify-content: center;
         align-items: flex-end;
         padding: 10px;
-    
-  
- 
 
         .left {
           display: flex;
@@ -130,7 +141,6 @@
     }
   }
 }
-
 // @media screen and (max-width: 768px) {
 //     .projectscontainer .project {
 //         width: 48%;

@@ -1,11 +1,12 @@
 "use client";
 import styles from "./style.module.scss";
 import { slideUp, opacity, slideUp2 } from "./animation";
-import { useInView, motion, useSpring } from "framer-motion";
+import { useInView, motion, useSpring, useScroll,useTransform } from "framer-motion";
 import React, { useRef, useEffect } from "react";
 import dynamic from "next/dynamic";
 import AnimatedDiv from "../AnimatedDiv";
 import { Link } from "react-scroll";
+import styled from "styled-components";
 // const Earth = dynamic(() => import("@/components/Earth"), {
 //   ssr: false,
 
@@ -38,9 +39,21 @@ export default function LandingV2() {
     updateRotation();
   }, [rotate]);
 
+
+  const container = useRef();
+  const { scrollYProgress } = useScroll({
+      target: container,
+      offset: ['start start', 'end start']
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0vh", "150vh"]);
+
   return (
     <>
       <div className={styles.section} ref={home} id="home">
+       
+
+      <motion.div style={{ y }} className={styles.motionDiv}>
         <div
         className={styles.circlecontainer}
           style={{
@@ -98,8 +111,9 @@ export default function LandingV2() {
             </div>
             </Link>
           </div>
-        </motion.div>
-      </div>
+        </motion.div>    
+        </motion.div>    </div>
+   
     </>
   );
 }
