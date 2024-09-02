@@ -79,7 +79,7 @@ export default function LandingV3() {
                   <div className={styles.buttoncontainer}>
                     <h6>know us better</h6>
                   </div>
-                </Link>
+                </Link> */}
                 <Link
                   to="projects"
                   spy={true}
@@ -90,7 +90,7 @@ export default function LandingV3() {
                   <div className={styles.buttoncontainer}>
                     <h6>featured projects</h6>
                   </div>
-                </Link> */}
+                </Link>
               </div>
 
              
