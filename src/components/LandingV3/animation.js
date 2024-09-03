@@ -7,7 +7,7 @@ export const slideUp = {
       y: 0,  // Se desplaza a la posición final
       opacity: 1,  // Se vuelve visible
       transition: {
-        duration: 0.6,
+        duration: 1.5,
         ease: [0.33, 1, 0.68, 1],
       },
     },
@@ -25,18 +25,31 @@ export const opacity = {
 }
 
 export const slideUp2 = {
-    initial: {
-        y: "20%",
-        // x:"-10%"
+  initial: {
+    y: 100,  // Ajusta la posición inicial para que esté cerca de la vista
+    opacity: 0,  // Inicia invisible
+  },
+  enter: {
+    y: 0,  // Se desplaza a la posición final
+    opacity: 1,  // Se vuelve visible
+    transition: {
+      duration: 1,
+      ease: [0.33, 1, 0.68, 1],
     },
-    open: (i) => ({
-        y: "0%",
-        // x:"0%",
-        transition: {duration: 0.5,ease: [0.33, 1, 0.68, 1], delay: 0.05 * i}
-    }),
-    closed: {
-        y: "20%",
-        // x:"-10%",
-        transition: {duration: 0.1}
-    }
+  },
+}
+
+export const slideUp3 = {
+  initial: {
+    y: 100,  // Ajusta la posición inicial para que esté cerca de la vista
+    opacity: 0,  // Inicia invisible
+  },
+  enter: {
+    y: 0,  // Se desplaza a la posición final
+    opacity: 1,  // Se vuelve visible
+    transition: {
+      duration: 1.5,
+      ease: [0.33, 1, 0.68, 1],
+    },
+  },
 }
