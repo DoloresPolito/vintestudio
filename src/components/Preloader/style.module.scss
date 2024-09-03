@@ -41,20 +41,22 @@
 
       }
   }
-  p{
-      display: flex;
-      color:var(--background);
-      font-size: 5vw;
-      align-items: center;
-      position: absolute;
-      bottom:0px;
-      right: 20%;
-      z-index: 1;
-      font-family: var(--font-jose);
+  p {
+    display: flex;
+    color: var(--background);
+    font-size: 4vw;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "TalismanCompactRegular", sans-serif;
 
-      @media screen and (max-width: 800px) {
+
+    @media screen and (max-width: 800px) {
         font-size: 3vw;
-      }
-
-  }
+    }
+}
 }
