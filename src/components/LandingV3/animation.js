@@ -34,7 +34,7 @@ export const slideUp2 = {
     opacity: 1,  // Se vuelve visible
     transition: {
       duration: 1,
-      ease: [0.33, 1, 0.68, 1],
+      ease: [0.33, 1, 0.68, 1], delay:0.5
     },
   },
 }
