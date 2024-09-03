@@ -26,7 +26,7 @@ export const opacity = {
 
 export const slideUp2 = {
   initial: {
-    y: 100,  // Ajusta la posición inicial para que esté cerca de la vista
+    y: 50,  // Ajusta la posición inicial para que esté cerca de la vista
     opacity: 0,  // Inicia invisible
   },
   enter: {

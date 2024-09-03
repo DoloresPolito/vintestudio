@@ -44,7 +44,7 @@
   p {
     display: flex;
     color: var(--background);
-    font-size: 4vw;
+    font-size: 6vh;
     align-items: center;
     justify-content: center;
     position: absolute;
@@ -56,7 +56,7 @@
 
 
     @media screen and (max-width: 800px) {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 }
 }
